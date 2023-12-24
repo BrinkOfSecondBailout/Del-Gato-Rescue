@@ -2,6 +2,7 @@ body {
     background-color: black;
     margin: 0 auto;
     width: 1000px;
+    
 }
 
 a {
@@ -25,10 +26,20 @@ a {
 .headline-text {
     text-align: center;
     width: 1000px;
+    
 }
+
 
 .headline-text h1 {
     font-size: 120px;
+    color: transparent;
+    /* color: white; */
+    -webkit-text-stroke: 2px #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.headline-text h1 span {
+    font-size: 80%;
 }
 
 .bg-video {
@@ -36,7 +47,8 @@ a {
     right: 0;
     bottom: 0;
     z-index: -1;
-    /* width: 1000px; */
-    /* opacity: 0.9; */
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0.9;
     border-radius: 20px;
 }
