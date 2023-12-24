@@ -125,9 +125,31 @@ body {
 
 
 .about-us-content {
-
+    text-align: center;
+    width: 1000px;
 }
 
 .our-work-content {
+    text-align: center;
+    width: 1000px;
+}
 
+.adopt-foster-content {
+    text-align: center;
+    width: 1000px;
+}
+
+.donate-content {
+    text-align: center;
+    width: 1000px;
+}
+
+.testimonial-content {
+    text-align: center;
+    width: 1000px;
+}
+
+.contact-content {
+    text-align: center;
+    width: 1000px;
 }
