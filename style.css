@@ -1,5 +1,14 @@
 body {
     background-color: black;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.navigation-links {
+
 }
 
 .main-logo {
