@@ -35,14 +35,22 @@ html {
     align-items: center;
     position: fixed;
     top: 0;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     z-index: 1000;
-    /* height: 20%; */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.753);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 .navigation-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .navigation-links a {
@@ -77,7 +85,7 @@ html {
 }
 
 .main-logo {
-    width: 180px;
+    width: 160px;
 }
 
 #home {
@@ -195,6 +203,7 @@ html {
     display: none;
     width: 400px;
     height: 600px;
+    filter: grayscale(100%);
 }
 
 .mySlides img {
