@@ -103,7 +103,7 @@ html {
     text-align: center;
 }
 
-.home-content{
+.home-content {
     width: 1000px;
     text-align: center;
     position: relative;
@@ -222,6 +222,10 @@ html {
 .adopt-foster-content {
     text-align: center;
     width: 1000px;
+    height: 75%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10vh;
 }
 
 /* Donate */
@@ -229,6 +233,10 @@ html {
 .donate-content {
     text-align: center;
     width: 1000px;
+    height: 75%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10vh;
 }
 
 /* Testimonials */
@@ -236,6 +244,10 @@ html {
 .testimonials-content {
     text-align: center;
     width: 1000px;
+    height: 75%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10vh;
 }
 
 /* Contact */
@@ -243,4 +255,8 @@ html {
 .contact-content {
     text-align: center;
     width: 1000px;
+    height: 75%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10vh;
 }
