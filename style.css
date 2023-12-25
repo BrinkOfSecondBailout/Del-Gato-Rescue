@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Background Video */
+
 
 .video-section {
     position: fixed;
@@ -28,6 +30,9 @@ html {
     object-fit: cover;
 }
 
+/* Top Navigations */
+
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -38,13 +43,13 @@ html {
     /* margin-top: 10px; */
     z-index: 1000;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.753);
+    /* border: 2px solid rgba(255, 255, 255, 0.753); */
     border-radius: 20px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 10px;
 }
 
@@ -88,7 +93,9 @@ html {
     width: 160px;
 }
 
-#home {
+/* Home */
+
+#home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -96,7 +103,7 @@ html {
     text-align: center;
 }
 
-.home-content {
+.home-content{
     width: 1000px;
     text-align: center;
     position: relative;
@@ -104,10 +111,9 @@ html {
 }
 
 
-.home-content h1 {
-    font-size: 120px;
+.home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 {
+    font-size: 100px;
     color: transparent;
-    /* color: white; */
     -webkit-text-stroke: 2px #fff;
 }
 
@@ -149,15 +155,7 @@ html {
 }
 
 
-
-#about-us {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
+/* About Us */
 
 .about-us-content {
     width: 1000px;
@@ -165,13 +163,6 @@ html {
     position: relative;
     height: 100%;
     margin-bottom: 15vh;
-}
-
-.about-us-content h1 {
-    font-size: 100px;
-    color: transparent;
-    /* color: white; */
-    -webkit-text-stroke: 2px #fff;
 }
 
 .about-us-flex {
@@ -213,28 +204,41 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Our Work */
+
+
 .our-work-content {
     text-align: center;
     width: 1000px;
     height: 75%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10vh;
 }
 
-
+/* Adopt & Foster */
 
 .adopt-foster-content {
     text-align: center;
     width: 1000px;
 }
 
+/* Donate */
+
 .donate-content {
     text-align: center;
     width: 1000px;
 }
 
+/* Testimonials */
+
 .testimonials-content {
     text-align: center;
     width: 1000px;
 }
+
+/* Contact */
 
 .contact-content {
     text-align: center;
