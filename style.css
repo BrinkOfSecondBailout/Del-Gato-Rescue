@@ -37,7 +37,7 @@ html {
     top: 0;
     margin-top: 10px;
     z-index: 1000;
-    height: 20%;
+    /* height: 20%; */
 }
 
 .navigation-links {
@@ -92,6 +92,7 @@ html {
     width: 1000px;
     text-align: center;
     position: relative;
+    margin-bottom: 10vh;
 }
 
 
@@ -147,6 +148,7 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .about-us-content {
@@ -154,6 +156,7 @@ html {
     text-align: center;
     position: relative;
     height: 100%;
+    margin-bottom: 15vh;
 }
 
 .about-us-content h1 {
@@ -167,44 +170,39 @@ html {
     display: flex;
 }
 
+.about-us-text {
+    flex: 1;
+}
+
+.description {
+    width: 80%;
+}
 .about-us-content p {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .slideshow-container {
+    flex: 1;
     position: relative;
     max-width: 100%;
-    margin-top: 20px;
+    left: 30px;
 }
 
 .mySlides {
     display: none;
     width: 400px;
+    height: 600px;
 }
 
-img {
+.mySlides img {
     width: 100%;
-    /* Ensure images fill the container */
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    font-size: 20px;
-    color: white;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 .our-work-content {
     text-align: center;

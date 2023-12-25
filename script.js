@@ -39,12 +39,9 @@ function showSlides() {
     }
 
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change slide every 3 seconds (adjust as needed)
+    setTimeout(showSlides, 4000);
 }
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     showSlides();
