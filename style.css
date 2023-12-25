@@ -102,7 +102,7 @@ html {
     -webkit-text-stroke: 2px #fff;
 }
 
-.home-content a, .about-us-content a, .our-work-content a, .adopt-foster-content a, .donate-content a, .testimonials-content a, .contact-content a  {
+.home-content a {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -118,7 +118,7 @@ html {
 }
 
 
-.home-content a::before , .about-us-content a::before , .our-work-content a::before , .adopt-foster-content a::before , .donate-content a::before , .testimonials-content a::before , .contact-content a::before {
+.home-content a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -129,7 +129,7 @@ html {
     transition: left 0.5s ease;
 }
 
-.home-content a:hover::before , .about-us-content a:hover::before , .our-work-content a:hover::before, .adopt-foster-content a:hover::before , .donate-content a:hover::before , .testimonials-content a:hover::before , .contact-content a:hover::before {
+.home-content a:hover::before {
     left: 100%;
 }
 
@@ -163,42 +163,47 @@ html {
     -webkit-text-stroke: 2px #fff;
 }
 
+.about-us-flex {
+    display: flex;
+}
+
 .about-us-content p {
-    font-size: 22px;
-    color: white;
-}
-
-.about-us-content a {
-    text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-    border: 2px solid whitesmoke;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 20px;
-    background-color: rgba(237, 46, 45, 0.5);
     color: white;
-    text-decoration: none;
+}
+
+.slideshow-container {
     position: relative;
-    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
+.mySlides {
+    display: none;
+    width: 400px;
+}
 
-.about-us-content a::before {
-    content: "";
+img {
+    width: 100%;
+    /* Ensure images fill the container */
+}
+
+.prev, .next {
     position: absolute;
-    top: 0;
-    left: -200%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
-    transition: left 0.5s ease;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
 }
 
-.about-us-content a:hover::before {
-    left: 100%;
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 
 .our-work-content {
