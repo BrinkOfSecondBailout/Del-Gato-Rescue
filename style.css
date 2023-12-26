@@ -234,6 +234,7 @@ html {
 
 .our-work-placeholder {
     padding: 20px;
+    display: block;
 }
 
 
@@ -248,7 +249,6 @@ html {
 }
 
 .our-work-flex {
-    display: flex;
     display: none;
 }
 
