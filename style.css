@@ -74,7 +74,7 @@ html {
     gap: 20px;
 }
 
-.navigation-links a , .our-work-links a{
+.navigation-links a , .our-work-links a, .one-column a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -82,7 +82,7 @@ html {
     font-family: 'PT Sans';
 }
 
-.navigation-links a::after , .our-work-links a::after {
+.navigation-links a::after , .our-work-links a::after , .one-column a::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -96,12 +96,12 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover , .our-work-links a:hover {
+.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover{
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after , .our-work-links a:hover::after {
+.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -275,6 +275,11 @@ html {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.our-work-links a.active {
+    color: red;
+    font-weight: bold;
+}
+
 .our-work-flex {
     display: none;
 }
@@ -309,6 +314,29 @@ html {
     position: relative;
     height: 100%;
     margin-bottom: 10vh;
+}
+
+.all-columns {
+    display: flex;
+    margin-top: -5vh;
+}
+
+.down {
+    margin-top: 3vh;
+}
+
+.one-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.one-column a {
+    font-weight: bold;
+}
+
+.one-column p {
+    color: white;
+    font-family: 'Titillium Web';
 }
 
 /* Donate */

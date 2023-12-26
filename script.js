@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             hidePlaceholder();
 
+            workLinks.forEach(link => link.classList.remove('active'));
+
+            this.classList.add('active');
+
             workSections.forEach(section => {
                 section.style.display = 'none';
             });
