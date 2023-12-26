@@ -58,14 +58,15 @@ html {
     gap: 20px;
 }
 
-.navigation-links a {
+.navigation-links a , .our-work-links a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
     transition: color 0.3s ease, border-bottom 0.3s ease;
+    font-family: 'PT Sans';
 }
 
-.navigation-links a::after {
+.navigation-links a::after , .our-work-links a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -79,12 +80,12 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover {
+.navigation-links a:hover , .our-work-links a:hover {
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after {
+.navigation-links a:hover::after , .our-work-links a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -167,21 +168,25 @@ html {
 
 .about-us-flex {
     display: flex;
+    margin-top: -5vh;
 }
 
 .about-us-text {
     flex: 1;
+    
 }
 
 .description {
     width: 80%;
+    
 }
+
 .about-us-content p {
     font-size: 18px;
     color: white;
     letter-spacing: 1px;
     line-height: 1.2;
-    font-family: 'Pt Sans';
+    font-family: 'Titillium Web';
 }
 
 .slideshow-container {
@@ -208,7 +213,6 @@ html {
 
 /* Our Work */
 
-
 .our-work-content {
     text-align: center;
     width: 1000px;
@@ -218,12 +222,19 @@ html {
     margin-bottom: 10vh;
 }
 
+.our-work-wrapper {
+    margin-top: -5vh;
+}
+
 .our-work-links {
     display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 .our-work-flex {
     display: flex;
+    /* display: none; */
 }
 
 .our-work-text {
@@ -236,7 +247,7 @@ html {
     color: white;
     letter-spacing: 1px;
     line-height: 1.2;
-    font-family: 'Pt Sans';
+    font-family: 'Titillium Web';
 }
 
 .work-picture {
