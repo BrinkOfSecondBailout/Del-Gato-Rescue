@@ -237,9 +237,21 @@ html {
     display: block;
 }
 
+@keyframes hoverUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Adjust the value to control the height of the hover */
+    }
+}
 
 .arrow-pic {
     width: 30px;
+    animation: hoverUpDown 0.5s infinite;
 }
 
 .placeholder-pic {
