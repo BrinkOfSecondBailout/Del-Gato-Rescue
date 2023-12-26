@@ -218,6 +218,10 @@ html {
     margin-bottom: 10vh;
 }
 
+.our-work-flex {
+    display: flex;
+}
+
 .our-work-content p {
     font-size: 18px;
     color: white;
