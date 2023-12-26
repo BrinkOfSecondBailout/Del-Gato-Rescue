@@ -327,16 +327,21 @@ html {
 
 .one-column {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
 }
 
 .one-column a {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .one-column p {
     color: white;
     font-family: 'Titillium Web';
+}
+
+.small-icon {
+    width: 80px;
 }
 
 /* Donate */
