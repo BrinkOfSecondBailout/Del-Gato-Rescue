@@ -41,10 +41,8 @@ html {
     align-items: center;
     position: fixed;
     top: 0;
-    /* margin-top: 10px; */
     z-index: 1000;
     background: transparent;
-    /* border: 2px solid rgba(255, 255, 255, 0.753); */
     border-radius: 20px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
@@ -55,7 +53,7 @@ html {
 }
 
 .navigation-total {
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .social-links {
@@ -299,7 +297,7 @@ html {
     width: 400px;
     height: 300px;
     border-radius: 10px;
-    margin-top: 5vh;
+    margin-top: 8vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 /* Adopt & Foster */
