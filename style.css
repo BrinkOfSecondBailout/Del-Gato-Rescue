@@ -377,19 +377,37 @@ html {
 
 .testimonials-content {
     text-align: center;
-    width: 1000px;
-    height: 75%;
+    width: 900px;
     position: relative;
     height: 100%;
     margin-bottom: 10vh;
 }
 
+.testimonials-wrapper {
+    margin-top: -7vh;
+}
+
+.all-reviews {
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.testimonials-content h3 {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    text-decoration: underline;
+}
 .testimonials-content p {
     color: white;
     font-family: 'Titillium Web';
-    font-size: 18px;
+    font-size: 16px;
 }
 
+.stars-ratings {
+    width: 100px;
+}
 /* Contact */
 
 .contact-content {
