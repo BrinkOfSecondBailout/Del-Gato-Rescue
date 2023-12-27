@@ -9,6 +9,20 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 /* Background Video */
 
@@ -341,7 +355,7 @@ html {
 }
 
 .small-icon {
-    width: 80px;
+    width: 60px;
 }
 
 /* Donate */
@@ -408,6 +422,8 @@ html {
 .stars-ratings {
     width: 100px;
 }
+
+
 /* Contact */
 
 .contact-content {
