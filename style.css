@@ -348,13 +348,31 @@ html {
 
 .donate-content {
     text-align: center;
-    width: 1000px;
+    width: 800px;
     height: 75%;
     position: relative;
     height: 100%;
-    margin-bottom: 10vh;
+    margin-bottom: 18vh;
 }
 
+.donate-content p {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+}
+
+.thank-you-icon {
+    margin-top: -8vh;
+}
+
+.donate-icon {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
 /* Testimonials */
 
 .testimonials-content {
