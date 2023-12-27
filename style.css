@@ -384,6 +384,12 @@ html {
     margin-bottom: 10vh;
 }
 
+.testimonials-content p {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+}
+
 /* Contact */
 
 .contact-content {
