@@ -215,20 +215,27 @@
             <h1>Contact Us</h1>
             <div>
                 <form class="contact-form">
-                    <label for="address">Full Name:*</label></br>
+                    <label for="address">Full Name: *</label></br>
                     <input type="text" id="name" placeholder="Full Name" required></br>
 
-                    <label for="address">Phone #:*</label></br>
+                    <label for="address">Phone #: *</label></br>
                     <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone #" required></br>
 
-                    <label for="address">Email:*</label></br>
+                    <label for="address">Email: *</label></br>
                     <input type="email" id="email" placeholder="Email Address" required></br>
 
                     <label for="address">Address:</label></br>
                     <input type="text" id="address" name="address" placeholder="Enter your address"></br>
                     
+                    <label for="reason">Reason for your contact: *</label></br>
+                    <select id="reason" name="reason">
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="Rescue">Rescue Request</option>
+                        <option value="Tnr">TNR Request</option>
+                        <option value="Adoption">Adoption/Foster Inquiry</option>
+                    </select></br>
 
-                    
+                    <label for="message">Message: *</label></br>
                     <textarea id="message" placeholder="Message" class="message-box" required></textarea></br>
                     <input type="submit" class="submit" value="Send Message">
                 </form>

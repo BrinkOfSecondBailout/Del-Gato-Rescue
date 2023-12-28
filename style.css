@@ -434,3 +434,9 @@ html {
     height: 100%;
     margin-bottom: 10vh;
 }
+
+.contact-form label {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 20px;
+}
