@@ -84,8 +84,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const contactForm = document.querySelector('.contact-form')
 
+let name = document.getElementById('name');
+let phone = document.getElementById('phone');
+let email = document.getElementById('email');
+let address = document.getElementById('address');
+let reason = document.getElementById('reason');
+let message = document.getElementById('message');
+
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    
+
 })
