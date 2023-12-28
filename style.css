@@ -130,6 +130,31 @@ html {
     width: 160px;
 }
 
+/* Bottom Bar */
+
+.bottom-bar {
+    width: 1000px;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background: black;
+    border-radius: 5px;
+    height: 35px;
+    display: block;
+    padding: 5px;
+}
+
+.bottom-bar p {
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    color: grey;
+    margin: 2px 0;
+    margin-top: -5px;
+    margin-bottom: -8px;
+}
+
 /* Home */
 
 #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact {
@@ -228,7 +253,7 @@ html {
 /* About Us */
 
 .about-us-content {
-    width: 1000px;
+    width: 850px;
     text-align: center;
     position: relative;
     height: 100%;
@@ -442,7 +467,7 @@ html {
 
 .all-reviews {
     padding: 20px;
-    max-height: 450px;
+    max-height: 420px;
     overflow-y: auto;
     margin-top: -20px;
 }
@@ -474,7 +499,7 @@ html {
 .form-total {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 550px;
+    height: 520px;
     margin-top: -7vh;
 }
 
@@ -504,6 +529,7 @@ html {
     font-family: 'Titillium Web';
     font-size: 14px;
     font-style: italic;
+    text-decoration: underline;
 }
 
 .contact-form ::placeholder {
