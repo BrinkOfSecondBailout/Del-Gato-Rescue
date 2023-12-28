@@ -13,6 +13,8 @@ html {
     display: flex;
 }
 
+
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -447,12 +449,24 @@ html {
 }
 
 .contact-form {
+    width: 800px;
+    text-align: left;
     margin-top: -8vh;
 }
 
-.contact-form input, option, textarea{
-    width: 50%;
-    margin-top: 5px;
+.flex label, input {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.contact-form select, input, option, textarea{
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
 }
