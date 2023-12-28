@@ -434,7 +434,6 @@ html {
 
 .contact-content {
     text-align: center;
-    width: 1000px;
     height: 75%;
     position: relative;
     height: 100%;
@@ -449,9 +448,11 @@ html {
 }
 
 .contact-form {
-    width: 800px;
-    text-align: right;
+    width: 600px;
     margin-top: -8vh;
+    background-color: rgb(171, 171, 171);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .flex label, input {
