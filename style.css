@@ -200,8 +200,7 @@ html {
 .subscribe-form {
     display: flex;
     justify-content: center;
-    width: 800px;
-    
+    width: 1000px;
 }
 
 .subscribe-input {

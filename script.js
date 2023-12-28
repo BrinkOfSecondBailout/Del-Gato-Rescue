@@ -82,6 +82,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+const subscribeForm = document.querySelector('.subscribe-form')
+
+let subscribeEmail = document.getElementById('subscribe');
+
+subscribeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let subscriptionData = {
+        email: subscribeEmail.value
+    }
+
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:3000/subscribe');
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function() {
+        console.log(xhr.responseText);
+
+        if(xhr.responseText == 'success') {
+            alert('Thank you! You are now subscribed!');
+            subscribeEmail.value = '';
+        } else {
+            alert('Something went wrong... please try again later');
+        }
+    }
+
+    xhr.send(JSON.stringify(subscriptionData));
+})
+
+
+
+
 const contactForm = document.querySelector('.contact-form')
 
 let inputName = document.getElementById('name');
@@ -104,7 +136,7 @@ contactForm.addEventListener('submit', (e) => {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:3000/');
+    xhr.open('POST', 'http://localhost:3000/contact');
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function() {
         console.log(xhr.responseText);
