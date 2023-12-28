@@ -193,7 +193,7 @@ html {
 
 .home-content h4 {
     color: white;
-    font-family: 'PT Sans';
+    font-family: 'Titillium Web';
     font-size: 18px;
 }
 
@@ -210,8 +210,14 @@ html {
 
 .subscribe-button {
     width: 100px;
-    background-color: rgba(237, 46, 45, .8);
-    border: 1px solid white;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.subscribe-button:hover {
+    background-color: white;
 }
 
 .subscribe-form ::placeholder {
