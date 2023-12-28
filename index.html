@@ -212,7 +212,27 @@
 
     <section id="contact">
         <div class="contact-content">
-            <h1>Contact</h1>
+            <h1>Contact Us</h1>
+            <div>
+                <form class="contact-form">
+                    <label for="address">Full Name:*</label></br>
+                    <input type="text" id="name" placeholder="Full Name" required></br>
+
+                    <label for="address">Phone #:*</label></br>
+                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone #" required></br>
+
+                    <label for="address">Email:*</label></br>
+                    <input type="email" id="email" placeholder="Email Address" required></br>
+
+                    <label for="address">Address:</label></br>
+                    <input type="text" id="address" name="address" placeholder="Enter your address"></br>
+                    
+
+                    
+                    <textarea id="message" placeholder="Message" class="message-box" required></textarea></br>
+                    <input type="submit" class="submit" value="Send Message">
+                </form>
+            </div>
         </div>
     </section>
 
