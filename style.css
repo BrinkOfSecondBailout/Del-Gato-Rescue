@@ -16,7 +16,7 @@ html {
 
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -433,39 +433,37 @@ html {
 /* Contact */
 
 .contact-content {
-    text-align: center;
-    height: 75%;
     position: relative;
     height: 100%;
     margin-bottom: 10vh;
 }
 
-
-.contact-form label {
-    color: white;
-    font-family: 'Titillium Web';
-    font-size: 18px;
+.form-total {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 550px;
+    margin-top: -7vh;
 }
 
+
 .contact-form {
-    width: 600px;
-    margin-top: -8vh;
+    width: 700px;
     border-radius: 10px;
     padding: 10px;
     background: transparent;
     border-radius: 20px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-.flex label, input {
-    width: 30%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-
+.contact-form label {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 18px;
 }
 
 .contact-form select, input, option, textarea{
@@ -478,6 +476,7 @@ html {
     border: none;
     border-bottom: 1px solid white;
     color: white;
+    text-align: center;
 }
 
 .contact-form option {
@@ -486,7 +485,8 @@ html {
 
 .message-box {
     width: 500px;
-    height: 180px;
+    height: 150px;
+    padding: 10px;
 }
 
 .submit {
@@ -495,6 +495,6 @@ html {
     padding: 10px;
     text-align: center;
     cursor: pointer;
-    width: 200px;
+    width: 160px;
     color: white;
 }
