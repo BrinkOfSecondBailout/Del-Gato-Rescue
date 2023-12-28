@@ -116,7 +116,7 @@ contactForm.addEventListener('submit', (e) => {
             inputEmail.value = '';
             inputAddress.value = '';
             inputReason.value = '';
-            messainputMessagege.value = '';
+            inputMessage.value = '';
         } else {
             alert('Something went wrong... please try again later');
         }

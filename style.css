@@ -450,9 +450,13 @@ html {
 .contact-form {
     width: 600px;
     margin-top: -8vh;
-    background-color: rgb(171, 171, 171);
     border-radius: 10px;
     padding: 10px;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    
 }
 
 .flex label, input {
@@ -473,6 +477,11 @@ html {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
+    color: white;
+}
+
+.contact-form option {
+    color: black;
 }
 
 .message-box {
