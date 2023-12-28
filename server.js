@@ -1,11 +1,12 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-
+require('dotenv').config();
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -16,16 +17,16 @@ app.post('/', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: '',
-            pass: ''
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
         }
     })
     
     const mailOptions = {
-        from: request.body.email,
-        to: '',
-        subject: `Message from ${request.body.email}: ${message.body.reason}`,
-        text: `Hello, my name is ${request.body.name}. My phone number is ${request.body.phone}. Address is ${request.body.address}. ${request.body.message}`
+        from: req.body.email,
+        to: process.env.EMAIL,
+        subject: `Message from ${req.body.email}: ${req.body.reason}`,
+        text: `Hello, my name is ${req.body.name}. My phone number is ${req.body.phone}. Address is ${req.body.address}. ${req.body.message}`
     }
 
     transporter.sendMail(mailOptions, (error, info) => {
