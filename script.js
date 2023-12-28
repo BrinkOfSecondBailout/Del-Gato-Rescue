@@ -84,24 +84,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const contactForm = document.querySelector('.contact-form')
 
-let name = document.getElementById('name');
-let phone = document.getElementById('phone');
-let email = document.getElementById('email');
-let address = document.getElementById('address');
-let reason = document.getElementById('reason');
-let message = document.getElementById('message');
+let inputName = document.getElementById('name');
+let inputPhone = document.getElementById('phone');
+let inputEmail = document.getElementById('email');
+let inputAddress = document.getElementById('address');
+let inputReason = document.getElementById('reason');
+let inputMessage = document.getElementById('message');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let formData = {
-        name: name.value,
-        phone: phone.value,
-        email: email.value,
-        address: address.value,
-        reason: reason.value,
-        message: message.value,
+        name: inputName.value,
+        phone: inputPhone.value,
+        email: inputEmail.value,
+        address: inputAddress.value,
+        reason: inputReason.value,
+        message: inputMessage.value,
     }
 
-    console.log(formData);
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/');
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function() {
+        console.log(xhr.responseText);
+
+        if(xhr.responseText == 'success') {
+            alert('Email sent! Thank you for your inquiry!');
+            inputName.value = '';
+            inputPhone.value = '';
+            inputEmail.value = '';
+            inputAddress.value = '';
+            inputReason.value = '';
+            messainputMessagege.value = '';
+        } else {
+            alert('Something went wrong... please try again later');
+        }
+    }
+
 })
