@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.flex {
+    display: flex;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -435,8 +439,25 @@ html {
     margin-bottom: 10vh;
 }
 
+
 .contact-form label {
     color: white;
     font-family: 'Titillium Web';
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.contact-form {
+    margin-top: -8vh;
+}
+
+.contact-form input, option, textarea{
+    width: 50%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message-box {
+    width: 500px;
+    height: 200px;
 }
