@@ -94,5 +94,14 @@ let message = document.getElementById('message');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    let formData = {
+        name: name.value,
+        phone: phone.value,
+        email: email.value,
+        address: address.value,
+        reason: reason.value,
+        message: message.value,
+    }
 
+    console.log(formData);
 })
