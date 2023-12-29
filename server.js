@@ -2,9 +2,9 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 const cors = require('cors');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
+const axios = require('axios'); 
 
 app.use(cors());
 app.use(express.json());
@@ -68,6 +68,31 @@ app.post('/subscribe', (req, res) => {
 
 })
 
+
+
+app.get('/cats', async (req, res) => {
+    const apiKey = process.env.ACCESS_TOKEN;
+    const apiUrl = 'https://api.petfinder.com/v2/animals';
+    const organizationId = process.env.ORGANIZATION_ID;
+    try {
+        const response = await axios.get(apiUrl, {
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+            },
+            params: {
+                type: 'cat',
+                organization: organizationId,
+            },
+        });
+
+        const cats = response.data.animals;
+        console.log(cats)
+        res.json(cats);
+    } catch (error) {
+        console.error('Error fetching cats:', error.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
 
 
 app.listen(PORT, () => {
