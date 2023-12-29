@@ -237,3 +237,5 @@ contactForm.addEventListener('submit', async (e) => {
         alert('Something went wrong... please try again later');
     }
 });
+
+
