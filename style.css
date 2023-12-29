@@ -148,8 +148,8 @@ html {
 
 .bottom-bar p {
     font-family: 'Titillium Web';
-    font-size: 16px;
-    color: grey;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
     margin: 2px 0;
     margin-top: -5px;
     margin-bottom: -8px;
@@ -290,11 +290,13 @@ html {
     left: 30px;
 }
 
+
 .mySlides {
     display: none;
     width: 400px;
     height: 600px;
 }
+
 
 .mySlides img {
     width: 100%;
