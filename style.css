@@ -57,7 +57,7 @@ html {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 950px;
     align-items: center;
     position: fixed;
     top: 0;
