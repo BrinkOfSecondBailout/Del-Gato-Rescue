@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     showSlides();
-    showAllCats();
+    
 });
 
 
@@ -176,13 +176,12 @@ contactForm.addEventListener('submit', async (e) => {
 // for Petfinder section and Adoptable Kitties 
 
 function showAllCats() {
-    const adoptableKitties = document.getElementById('adopt');
-
-    let adoptCatsUrl = 'http://localhost:3000/cats';
-
-    adoptableKitties.addEventListener('click', async function (e) {
+    document.addEventListener('DOMContentLoaded', async function (e) {
         e.preventDefault();
-
+        
+        const adoptableKitties = document.querySelector('petfinder-content')
+        let adoptCatsUrl = 'http://localhost:3000/cats';
+        
         try {
             const response = await axios.get(adoptCatsUrl);
             const adoptableCats = response.data;
@@ -194,6 +193,7 @@ function showAllCats() {
     })
 }
 
+showAllCats();
 
 
 // Using XMLHttpRequest to send email
