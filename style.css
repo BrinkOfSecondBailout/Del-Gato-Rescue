@@ -596,11 +596,9 @@ html {
     height: 530px;
     margin-top: -7vh;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 10px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
-    /* text-align: center; */
-    /* align-items: center; */
     padding: 10px;
 }
 
@@ -622,4 +620,11 @@ html {
     letter-spacing: 1px;
     line-height: 1.2;
     font-family: 'Titillium Web';
+}
+
+.cat-picture {
+    width: 300px;
+    height: 330px;
+    border-radius: 15px;
+    padding: 10px;
 }

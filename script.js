@@ -191,8 +191,10 @@ function showAllCats() {
             adoptableCats.forEach(cat => {
                 const catElement = document.createElement('div');
                 catElement.classList.add('cat');
-
+                
                 const catImage = document.createElement('img');
+                catImage.classList.add('cat-picture');
+
                 catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
                 catImage.alt = cat.name;
 
