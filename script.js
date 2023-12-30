@@ -199,13 +199,18 @@ function showAllCats() {
                 catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
                 catImage.alt = cat.name;
 
-                const catName = document.createElement('h3');
+                const catImageLink = document.createElement('a');
+                catImageLink.href = "";
+                catImageLink.appendChild(catImage);
+
+                const catName = document.createElement('a');
+                catName.href = "";
                 catName.textContent = cat.name;
                 
                 const catDescription = document.createElement('h4');
                 catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
 
-                catElement.appendChild(catImage);
+                catElement.appendChild(catImageLink);
                 catElement.appendChild(catName);
                 catElement.appendChild(catDescription);
 
