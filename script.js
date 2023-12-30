@@ -1,24 +1,15 @@
+// all function callbacks upon loading
+
+document.addEventListener('DOMContentLoaded', function () {
+    showSlides();
+    showAllCats();
+});
+
+
+// for Navigation Links
+
 document.addEventListener('DOMContentLoaded', function () {
     const scrollLinks = document.querySelectorAll('.scroll-link');
-
-    // const adoptableKitties = document.getElementById('adopt');
-
-    // let adoptCatsUrl = 'http://localhost:3000/cats';
-
-    // adoptableKitties.addEventListener('click', async function (e) {
-    //     e.preventDefault();
-
-    //     try {
-    //         const response = await axios.get(adoptCatsUrl);
-    //         const adoptableCats = response.data;
-
-    //         console.log(adoptableCats);
-    //     } catch (error) {
-    //         console.error('Error fetching cats:', error.message);
-    //     }
-    // })
-
-
 
     scrollLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -41,6 +32,41 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// for Subscribe Form on Homepage
+
+const subscribeForm = document.querySelector('.subscribe-form');
+
+let subscribeEmail = document.getElementById('subscribe');
+
+subscribeForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    let subscriptionData = {
+        email: subscribeEmail.value,
+    };
+
+    let liveServerUrl = 'http://localhost:3000/subscribe';
+
+    try {
+        const response = await axios.post(liveServerUrl, subscriptionData);
+
+        console.log(response.data);
+
+        if (response.data === 'success') {
+            alert('Thank you! You are now subscribed!');
+            subscribeEmail.value = '';
+        } else {
+            alert('Something went wrong... please try again later');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong... please try again later');
+    }
+});
+
+
+// for About Us Slideshow
+
 let slideIndex = 0;
 
 function showSlides() {
@@ -62,11 +88,8 @@ function showSlides() {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    showSlides();
-});
 
-
+// for Our Work categories
 
 document.addEventListener('DOMContentLoaded', function () {
     const workLinks = document.querySelectorAll('.our-work-links a');
@@ -102,57 +125,44 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Using XMLHttpRequest to send email to subscriber's list
+// for Contact Us Form and Message Box
 
-// const subscribeForm = document.querySelector('.subscribe-form')
+const contactForm = document.querySelector('.contact-form');
 
-// let subscribeEmail = document.getElementById('subscribe');
+let inputName = document.getElementById('name');
+let inputPhone = document.getElementById('phone');
+let inputEmail = document.getElementById('email');
+let inputAddress = document.getElementById('address');
+let inputReason = document.getElementById('reason');
+let inputMessage = document.getElementById('message');
 
-// subscribeForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     let subscriptionData = {
-//         email: subscribeEmail.value
-//     }
-
-//     let xhr = new XMLHttpRequest();
-//     xhr.open('POST', 'http://localhost:3000/subscribe');
-//     xhr.setRequestHeader('content-type', 'application/json');
-//     xhr.onload = function() {
-//         console.log(xhr.responseText);
-
-//         if(xhr.responseText == 'success') {
-//             alert('Thank you! You are now subscribed!');
-//             subscribeEmail.value = '';
-//         } else {
-//             alert('Something went wrong... please try again later');
-//         }
-//     }
-
-//     xhr.send(JSON.stringify(subscriptionData));
-// })
-
-const subscribeForm = document.querySelector('.subscribe-form');
-
-let subscribeEmail = document.getElementById('subscribe');
-
-subscribeForm.addEventListener('submit', async (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    let subscriptionData = {
-        email: subscribeEmail.value,
+    let formData = {
+        name: inputName.value,
+        phone: inputPhone.value,
+        email: inputEmail.value,
+        address: inputAddress.value,
+        reason: inputReason.value,
+        message: inputMessage.value,
     };
 
-    let liveServerUrl = 'http://localhost:3000/subscribe';
+    let liveServerUrl = 'http://localhost:3000/contact';
 
     try {
-        const response = await axios.post(liveServerUrl, subscriptionData);
+        const response = await axios.post(liveServerUrl, formData);
 
         console.log(response.data);
 
-        if (response.data === 'success') {
-            alert('Thank you! You are now subscribed!');
-            subscribeEmail.value = '';
+        if(response.data === 'success') {
+            alert('Email sent! Thank you for your inquiry!');
+            inputName.value = '';
+            inputPhone.value = '';
+            inputEmail.value = '';
+            inputAddress.value = '';
+            inputReason.value = '';
+            inputMessage.value = '';
         } else {
             alert('Something went wrong... please try again later');
         }
@@ -161,6 +171,30 @@ subscribeForm.addEventListener('submit', async (e) => {
         alert('Something went wrong... please try again later');
     }
 });
+
+
+// for Petfinder section and Adoptable Kitties 
+
+function showAllCats() {
+    const adoptableKitties = document.getElementById('adopt');
+
+    let adoptCatsUrl = 'http://localhost:3000/cats';
+
+    adoptableKitties.addEventListener('click', async function (e) {
+        e.preventDefault();
+
+        try {
+            const response = await axios.get(adoptCatsUrl);
+            const adoptableCats = response.data;
+
+            console.log(adoptableCats);
+        } catch (error) {
+            console.error('Error fetching cats:', error.message);
+        }
+    })
+}
+
+
 
 // Using XMLHttpRequest to send email
 
@@ -209,52 +243,38 @@ subscribeForm.addEventListener('submit', async (e) => {
 // })
 
 
+// Using XMLHttpRequest to send email to subscriber's list
+
+// const subscribeForm = document.querySelector('.subscribe-form')
+
+// let subscribeEmail = document.getElementById('subscribe');
+
+// subscribeForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+//     let subscriptionData = {
+//         email: subscribeEmail.value
+//     }
+
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('POST', 'http://localhost:3000/subscribe');
+//     xhr.setRequestHeader('content-type', 'application/json');
+//     xhr.onload = function() {
+//         console.log(xhr.responseText);
+
+//         if(xhr.responseText == 'success') {
+//             alert('Thank you! You are now subscribed!');
+//             subscribeEmail.value = '';
+//         } else {
+//             alert('Something went wrong... please try again later');
+//         }
+//     }
+
+//     xhr.send(JSON.stringify(subscriptionData));
+// })
 
 
 
-const contactForm = document.querySelector('.contact-form');
 
-let inputName = document.getElementById('name');
-let inputPhone = document.getElementById('phone');
-let inputEmail = document.getElementById('email');
-let inputAddress = document.getElementById('address');
-let inputReason = document.getElementById('reason');
-let inputMessage = document.getElementById('message');
-
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    let formData = {
-        name: inputName.value,
-        phone: inputPhone.value,
-        email: inputEmail.value,
-        address: inputAddress.value,
-        reason: inputReason.value,
-        message: inputMessage.value,
-    };
-
-    let liveServerUrl = 'http://localhost:3000/contact';
-
-    try {
-        const response = await axios.post(liveServerUrl, formData);
-
-        console.log(response.data);
-
-        if(response.data === 'success') {
-            alert('Email sent! Thank you for your inquiry!');
-            inputName.value = '';
-            inputPhone.value = '';
-            inputEmail.value = '';
-            inputAddress.value = '';
-            inputReason.value = '';
-            inputMessage.value = '';
-        } else {
-            alert('Something went wrong... please try again later');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Something went wrong... please try again later');
-    }
-});
 
 
