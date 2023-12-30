@@ -609,7 +609,13 @@ html {
 }
 
 .all-cats h3 {
-    font-size: 18px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Pt Sans';
+}
+
+.all-cats h4 {
+    font-size: 16px;
     color: white;
     font-family: 'Pt Sans';
 }

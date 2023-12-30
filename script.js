@@ -189,6 +189,7 @@ function showAllCats() {
             adoptableKitties.innerHTML = '';
 
             adoptableCats.forEach(cat => {
+                // console.log(cat)
                 const catElement = document.createElement('div');
                 catElement.classList.add('cat');
                 
@@ -200,9 +201,13 @@ function showAllCats() {
 
                 const catName = document.createElement('h3');
                 catName.textContent = cat.name;
+                
+                const catDescription = document.createElement('h4');
+                catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
 
                 catElement.appendChild(catImage);
                 catElement.appendChild(catName);
+                catElement.appendChild(catDescription);
 
                 // const catName = document.createElement('h3');
                 // catName.textContent = cat.name;
