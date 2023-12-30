@@ -86,7 +86,7 @@ app.get('/cats', async (req, res) => {
         });
 
         const cats = response.data.animals;
-        console.log(cats)
+        // console.log(cats)
         res.json(cats);
     } catch (error) {
         console.error('Error fetching cats:', error.message);

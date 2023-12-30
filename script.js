@@ -179,14 +179,31 @@ function showAllCats() {
     document.addEventListener('DOMContentLoaded', async function (e) {
         e.preventDefault();
         
-        const adoptableKitties = document.querySelector('petfinder-content')
+        const adoptableKitties = document.querySelector('.all-cats')
         let adoptCatsUrl = 'http://localhost:3000/cats';
         
         try {
             const response = await axios.get(adoptCatsUrl);
             const adoptableCats = response.data;
 
-            console.log(adoptableCats);
+            adoptableKitties.innerHTML = '';
+
+            adoptableCats.forEach(cat => {
+                const catElement = document.createElement('div');
+                catElement.classList.add('cat');
+
+                const catName = document.createElement('h3');
+                catName.textContent = cat.name;
+
+                const catDescription = document.createElement('p');
+                catDescription.textContent = cat.description;
+
+                catElement.appendChild(catName);
+                catElement.appendChild(catDescription);
+
+                adoptableKitties.appendChild(catElement);
+            })
+
         } catch (error) {
             console.error('Error fetching cats:', error.message);
         }
