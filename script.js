@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
     const scrollLinks = document.querySelectorAll('.scroll-link');
 
-    const adoptableKitties = document.getElementById('adopt');
+    // const adoptableKitties = document.getElementById('adopt');
 
-    let adoptCatsUrl = 'http://localhost:3000/cats';
+    // let adoptCatsUrl = 'http://localhost:3000/cats';
 
-    adoptableKitties.addEventListener('click', async function (e) {
-        e.preventDefault();
+    // adoptableKitties.addEventListener('click', async function (e) {
+    //     e.preventDefault();
 
-        try {
-            const response = await axios.get(adoptCatsUrl);
-            const adoptableCats = response.data;
+    //     try {
+    //         const response = await axios.get(adoptCatsUrl);
+    //         const adoptableCats = response.data;
 
-            console.log(adoptableCats);
-        } catch (error) {
-            console.error('Error fetching cats:', error.message);
-        }
-    })
+    //         console.log(adoptableCats);
+    //     } catch (error) {
+    //         console.error('Error fetching cats:', error.message);
+    //     }
+    // })
 
 
 

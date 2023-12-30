@@ -157,7 +157,7 @@ html {
 
 /* Home */
 
-#home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact {
+#home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact , #petfinder{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -173,7 +173,7 @@ html {
 }
 
 
-.home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 {
+.home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1{
     font-size: 100px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
@@ -572,4 +572,13 @@ html {
     cursor: pointer;
     width: 160px;
     color: white;
+}
+
+/* Petfinder */
+
+.petfinder-content {
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10vh;
 }
