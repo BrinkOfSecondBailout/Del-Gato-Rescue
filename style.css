@@ -88,6 +88,11 @@ html {
     width: 50px;
 }
 
+.social-icon:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
 
 .navigation-links {
     display: flex;
