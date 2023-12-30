@@ -179,7 +179,7 @@ function showAllCats() {
     document.addEventListener('DOMContentLoaded', async function (e) {
         e.preventDefault();
         
-        const adoptableKitties = document.querySelector('.all-cats')
+        const adoptableKitties = document.querySelector('.all-cats-wrapper')
         let adoptCatsUrl = 'http://localhost:3000/cats';
         
         try {
@@ -192,14 +192,24 @@ function showAllCats() {
                 const catElement = document.createElement('div');
                 catElement.classList.add('cat');
 
+                const catImage = document.createElement('img');
+                catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
+                catImage.alt = cat.name;
+
                 const catName = document.createElement('h3');
                 catName.textContent = cat.name;
 
-                const catDescription = document.createElement('p');
-                catDescription.textContent = cat.description;
-
+                catElement.appendChild(catImage);
                 catElement.appendChild(catName);
-                catElement.appendChild(catDescription);
+
+                // const catName = document.createElement('h3');
+                // catName.textContent = cat.name;
+
+                // const catDescription = document.createElement('p');
+                // catDescription.textContent = cat.description;
+
+                // catElement.appendChild(catName);
+                // catElement.appendChild(catDescription);
 
                 adoptableKitties.appendChild(catElement);
             })

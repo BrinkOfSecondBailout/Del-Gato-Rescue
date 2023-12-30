@@ -593,14 +593,33 @@ html {
 .all-cats {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 520px;
+    height: 530px;
     margin-top: -7vh;
     background: transparent;
     border-radius: 20px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    /* text-align: center; */
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.all-cats-wrapper {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.all-cats h3 {
+    font-size: 18px;
+    color: white;
+    font-family: 'Pt Sans';
+}
+
+.all-cats p {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-family: 'Titillium Web';
 }
