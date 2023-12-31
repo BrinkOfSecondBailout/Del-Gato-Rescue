@@ -645,6 +645,7 @@ html {
     height: 330px;
     border-radius: 20px;
     padding: 10px;
+    object-fit: cover;
 }
 
 .cat-picture:hover {
