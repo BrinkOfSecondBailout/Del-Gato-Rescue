@@ -223,51 +223,66 @@ function goBackToAllCats() {
 
 // Display all cats from Petfinder
 
+let cachedCats = null;
+
 async function showAllCats() {
-    const adoptableKitties = document.querySelector('.all-cats-wrapper')
+    const allCatsContainer = document.querySelector('.all-cats-wrapper')
 
     let adoptCatsUrl = 'http://localhost:3000/cats';
     
     try {
+
+        if (cachedCats) {
+            displayCats(allCatsContainer, cachedCats);
+        }
+
         const response = await axios.get(adoptCatsUrl);
         const adoptableCats = response.data;
 
-        adoptableKitties.innerHTML = '';
+        cachedCats = adoptableCats;
 
-        adoptableCats.forEach(cat => {
-            const catElement = document.createElement('div');
-            catElement.classList.add('cat');
-            
-            const catImage = document.createElement('img');
-            catImage.classList.add('cat-picture');
-
-            catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
-            catImage.alt = cat.name;
-
-            const catImageLink = document.createElement('a');
-            catImageLink.appendChild(catImage);
-
-            catImageLink.addEventListener('click', () => showOneCat(cat));
-
-            const catName = document.createElement('a');
-            catName.textContent = cat.name;
-
-            catName.addEventListener('click', () => showOneCat(cat));
-
-            const catDescription = document.createElement('h4');
-            catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
-
-            catElement.appendChild(catImageLink);
-            catElement.appendChild(catName);
-            catElement.appendChild(catDescription);
-
-            adoptableKitties.appendChild(catElement);
-        })
+        displayCats(allCatsContainer, adoptableCats);
 
     } catch (error) {
         console.error('Error fetching cats:', error.message);
     }
 }
+
+// Function to show all cats
+
+function displayCats(container, cats) {
+    container.innerHTML = '';
+
+    cats.forEach(cat => {
+        const catElement = document.createElement('div');
+        catElement.classList.add('cat');
+        
+        const catImage = document.createElement('img');
+        catImage.classList.add('cat-picture');
+
+        catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
+        catImage.alt = cat.name;
+
+        const catImageLink = document.createElement('a');
+        catImageLink.appendChild(catImage);
+
+        catImageLink.addEventListener('click', () => showOneCat(cat));
+
+        const catName = document.createElement('a');
+        catName.textContent = cat.name;
+
+        catName.addEventListener('click', () => showOneCat(cat));
+
+        const catDescription = document.createElement('h4');
+        catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
+
+        catElement.appendChild(catImageLink);
+        catElement.appendChild(catName);
+        catElement.appendChild(catDescription);
+
+        container.appendChild(catElement);
+    });
+};
 
 showAllCats();
 
