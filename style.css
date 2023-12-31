@@ -673,7 +673,7 @@ html {
 }
 
 .back-button {
-    width: 35px;
+    width: 40px;
     cursor: pointer;
     animation: hoverLeftToRight 0.5s infinite;
 }

@@ -186,7 +186,7 @@ function showOneCat(cat) {
 
     const backButtonElement = document.createElement('img');
     backButtonElement.classList.add('back-button');
-    backButtonElement.src = 'assets/back-button.png';
+    backButtonElement.src = 'assets/back-button2.png';
     backButtonElement.alt = 'Go Back';
     backButtonElement.addEventListener('click', () => goBackToAllCats());
 
@@ -223,6 +223,7 @@ function goBackToAllCats() {
 
 // Display all cats from Petfinder
 
+// This will store all cats generated in order to load faster when users navigate
 let cachedCats = null;
 
 async function showAllCats() {
