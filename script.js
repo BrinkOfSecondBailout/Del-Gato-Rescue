@@ -207,6 +207,8 @@ function showOneCat(cat) {
     const slideShowContainer = document.createElement('div');
     slideShowContainer.appendChild(prevButton);
     slideShowContainer.classList.add('cat-slideshow-container');
+
+    // console.log(cat)
     
     cat.photos.forEach((photo, index) => {
         const slide = document.createElement('div');
@@ -251,10 +253,13 @@ function showOneCat(cat) {
     selectedCatName.textContent = cat.name;
 
     const selectedCatDescription = document.createElement('p');
-    selectedCatDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
+    const selectedCatTagLine = document.createElement('h4');
+    selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}`;
+    selectedCatDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
 
     // selectedCatElement.appendChild(selectedCatImage);
     selectedCatElement.appendChild(selectedCatName);
+    selectedCatElement.appendChild(selectedCatTagLine);
     selectedCatElement.appendChild(selectedCatDescription);
     // selectedCatName.appendChild(prevButton);
     // selectedCatName.appendChild(nextButton);

@@ -688,6 +688,12 @@ html {
     font-family: 'Pt Sans';
 }
 
+.one-cat h4 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Pt Sans';
+}
+
 .selected-cat-picture {
     width: 300px;
     height: 330px;
@@ -699,19 +705,26 @@ html {
 .cat-slideshow-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.cat-slide {
-    
+.cat-slide img {
+    width: 330px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .prev {
     width: 40px;
     height: 40px;
+    padding-right: 10px;
 }
 
 
 .next {
     width: 40px;
     height: 40px;
+    padding-left: 10px;
 }
