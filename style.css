@@ -675,10 +675,11 @@ html {
 .back-button {
     width: 40px;
     cursor: pointer;
-    animation: hoverLeftToRight 0.5s infinite;
+    animation: hoverLeftToRight 0.7s infinite;
 }
 
 .one-cat {
+    margin-top: 10px;
 }
 
 .selected-cat-picture {
