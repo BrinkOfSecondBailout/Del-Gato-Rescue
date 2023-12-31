@@ -177,10 +177,10 @@ contactForm.addEventListener('submit', async (e) => {
 
 
 // Show one cat when clicked on
+const oneCatDisplay = document.querySelector('.one-cat');
 
 function showOneCat(cat) {
     const adoptableKitties = document.querySelector('.all-cats-wrapper');
-    const oneCatDisplay = document.querySelector('.one-cat');
 
     adoptableKitties.innerHTML = '';
 
@@ -188,6 +188,7 @@ function showOneCat(cat) {
     backButtonElement.classList.add('back-button');
     backButtonElement.src = 'assets/back-button.png';
     backButtonElement.alt = 'Go Back';
+    backButtonElement.addEventListener('click', () => goBackToAllCats());
 
     const selectedCatElement = document.createElement('div');
     selectedCatElement.classList.add('selected-cat');
@@ -212,56 +213,60 @@ function showOneCat(cat) {
     oneCatDisplay.appendChild(selectedCatElement);
 }
 
+// Go Back Button to Return to All Cats
+
+function goBackToAllCats() {
+    oneCatDisplay.innerHTML = '';
+    showAllCats();
+}
+
+
 // Display all cats from Petfinder
 
-function showAllCats() {
-    document.addEventListener('DOMContentLoaded', async function (e) {
-        e.preventDefault();
-        
-        const adoptableKitties = document.querySelector('.all-cats-wrapper')
+async function showAllCats() {
+    const adoptableKitties = document.querySelector('.all-cats-wrapper')
 
-        let adoptCatsUrl = 'http://localhost:3000/cats';
-        
-        try {
-            const response = await axios.get(adoptCatsUrl);
-            const adoptableCats = response.data;
+    let adoptCatsUrl = 'http://localhost:3000/cats';
+    
+    try {
+        const response = await axios.get(adoptCatsUrl);
+        const adoptableCats = response.data;
 
-            adoptableKitties.innerHTML = '';
+        adoptableKitties.innerHTML = '';
 
-            adoptableCats.forEach(cat => {
-                const catElement = document.createElement('div');
-                catElement.classList.add('cat');
-                
-                const catImage = document.createElement('img');
-                catImage.classList.add('cat-picture');
+        adoptableCats.forEach(cat => {
+            const catElement = document.createElement('div');
+            catElement.classList.add('cat');
+            
+            const catImage = document.createElement('img');
+            catImage.classList.add('cat-picture');
 
-                catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
-                catImage.alt = cat.name;
+            catImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
+            catImage.alt = cat.name;
 
-                const catImageLink = document.createElement('a');
-                catImageLink.appendChild(catImage);
+            const catImageLink = document.createElement('a');
+            catImageLink.appendChild(catImage);
 
-                catImageLink.addEventListener('click', () => showOneCat(cat));
+            catImageLink.addEventListener('click', () => showOneCat(cat));
 
-                const catName = document.createElement('a');
-                catName.textContent = cat.name;
+            const catName = document.createElement('a');
+            catName.textContent = cat.name;
 
-                catName.addEventListener('click', () => showOneCat(cat));
+            catName.addEventListener('click', () => showOneCat(cat));
 
-                const catDescription = document.createElement('h4');
-                catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
+            const catDescription = document.createElement('h4');
+            catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
 
-                catElement.appendChild(catImageLink);
-                catElement.appendChild(catName);
-                catElement.appendChild(catDescription);
+            catElement.appendChild(catImageLink);
+            catElement.appendChild(catName);
+            catElement.appendChild(catDescription);
 
-                adoptableKitties.appendChild(catElement);
-            })
+            adoptableKitties.appendChild(catElement);
+        })
 
-        } catch (error) {
-            console.error('Error fetching cats:', error.message);
-        }
-    })
+    } catch (error) {
+        console.error('Error fetching cats:', error.message);
+    }
 }
 
 showAllCats();

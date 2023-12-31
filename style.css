@@ -658,12 +658,27 @@ html {
     transition: transform 0.4s ease;
 }
 
+@keyframes hoverLeftToRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .back-button {
-    width: 40px;
+    width: 35px;
+    cursor: pointer;
+    animation: hoverLeftToRight 0.5s infinite;
 }
 
 .one-cat {
-
 }
 
 .selected-cat-picture {
