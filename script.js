@@ -193,9 +193,21 @@ function showOneCat(cat) {
     const selectedCatElement = document.createElement('div');
     selectedCatElement.classList.add('selected-cat');
 
-    const slideShowContainer = document.createElement('div');
-    slideShowContainer.classList.add('cat-slideshow-container');
+    const prevButton = document.createElement('img');
+    prevButton.src = "assets/previous.png";
+    prevButton.alt = "previous";
+    prevButton.classList.add('prev');
 
+    const nextButton = document.createElement('img');
+    nextButton.src = "assets/next.png";
+    nextButton.alt = "next";
+    nextButton.classList.add('next');
+
+
+    const slideShowContainer = document.createElement('div');
+    slideShowContainer.appendChild(prevButton);
+    slideShowContainer.classList.add('cat-slideshow-container');
+    
     cat.photos.forEach((photo, index) => {
         const slide = document.createElement('div');
         slide.classList.add('cat-slide');
@@ -209,15 +221,7 @@ function showOneCat(cat) {
         slideShowContainer.appendChild(slide);
     })
 
-    const prevButton = document.createElement('img');
-    prevButton.src = "assets/previous.png";
-    prevButton.alt = "previous";
-    prevButton.classList.add('prev');
-
-    const nextButton = document.createElement('img');
-    nextButton.src = "assets/next.png";
-    nextButton.alt = "next";
-    nextButton.classList.add('next');
+    slideShowContainer.appendChild(nextButton);
 
     let currentIndex = 0;
 
@@ -252,8 +256,8 @@ function showOneCat(cat) {
     // selectedCatElement.appendChild(selectedCatImage);
     selectedCatElement.appendChild(selectedCatName);
     selectedCatElement.appendChild(selectedCatDescription);
-    selectedCatName.appendChild(prevButton);
-    selectedCatName.appendChild(nextButton);
+    // selectedCatName.appendChild(prevButton);
+    // selectedCatName.appendChild(nextButton);
     selectedCatElement.appendChild(slideShowContainer);
 
     oneCatDisplay.innerHTML = '';

@@ -697,7 +697,8 @@ html {
 }
 
 .cat-slideshow-container {
-    
+    display: flex;
+    justify-content: center;
 }
 
 .cat-slide {
@@ -705,10 +706,12 @@ html {
 }
 
 .prev {
-
+    width: 40px;
+    height: 40px;
 }
 
 
 .next {
-
+    width: 40px;
+    height: 40px;
 }
