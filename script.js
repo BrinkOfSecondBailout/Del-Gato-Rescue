@@ -193,10 +193,45 @@ function showOneCat(cat) {
     const selectedCatElement = document.createElement('div');
     selectedCatElement.classList.add('selected-cat');
 
-    const selectedCatImage = document.createElement('img');
-    selectedCatImage.classList.add('selected-cat-picture');
-    selectedCatImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
-    selectedCatImage.alt = cat.name;
+    const slideShowContainer = document.createElement('div');
+    slideShowContainer.classList.add('cat-slideshow-container');
+
+    cat.photos.forEach((photo, index) => {
+        const slide = document.createElement('div');
+        slide.classList.add('cat-slide');
+        slide.style.display = index === 0 ? 'block' : 'none';
+
+        const slideImage = document.createElement('img');
+        slideImage.src = photo.medium;
+        slideImage.alt = cat.name;
+
+        slide.appendChild(slideImage);
+        slideShowContainer.appendChild(slide);
+    })
+
+    const prevButton = document.createElement('a');
+    prevButton.classList.add('prev');
+    prevButton.textContent = '<';
+
+    const nextButton = document.createElement('a');
+    nextButton.classList.add('next');
+    nextButton.textContent = '>';
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.cat-slide');
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    
+
+    // const selectedCatImage = document.createElement('img');
+    // selectedCatImage.classList.add('selected-cat-picture');
+    // selectedCatImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
+    // selectedCatImage.alt = cat.name;
 
     const selectedCatName = document.createElement('h2');
     selectedCatName.textContent = cat.name;
@@ -204,12 +239,13 @@ function showOneCat(cat) {
     const selectedCatDescription = document.createElement('p');
     selectedCatDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
 
-    selectedCatElement.appendChild(selectedCatImage);
+    // selectedCatElement.appendChild(selectedCatImage);
     selectedCatElement.appendChild(selectedCatName);
     selectedCatElement.appendChild(selectedCatDescription);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);
+    oneCatDisplay.appendChild(slideShowContainer);
     oneCatDisplay.appendChild(selectedCatElement);
 }
 
