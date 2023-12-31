@@ -175,7 +175,6 @@ contactForm.addEventListener('submit', async (e) => {
 
 // for Petfinder section and Adoptable Kitties 
 
-
 // Show one cat when clicked on
 const oneCatDisplay = document.querySelector('.one-cat');
 
@@ -244,25 +243,22 @@ function showOneCat(cat) {
         showSlide(currentIndex);
     })
 
-    // const selectedCatImage = document.createElement('img');
-    // selectedCatImage.classList.add('selected-cat-picture');
-    // selectedCatImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
-    // selectedCatImage.alt = cat.name;
 
     const selectedCatName = document.createElement('h2');
     selectedCatName.textContent = cat.name;
 
     const selectedCatDescription = document.createElement('p');
     const selectedCatTagLine = document.createElement('h4');
-    selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}`;
+    selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}, ${cat.contact.address.state}`;
     selectedCatDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
 
-    // selectedCatElement.appendChild(selectedCatImage);
+    const oneCatTagDiv = document.createElement('div');
+    oneCatTagDiv.classList.add('cat-tagline');
+    oneCatTagDiv.appendChild(selectedCatTagLine);
+    oneCatTagDiv.appendChild(selectedCatDescription);
+
     selectedCatElement.appendChild(selectedCatName);
-    selectedCatElement.appendChild(selectedCatTagLine);
-    selectedCatElement.appendChild(selectedCatDescription);
-    // selectedCatName.appendChild(prevButton);
-    // selectedCatName.appendChild(nextButton);
+    selectedCatElement.appendChild(oneCatTagDiv);
     selectedCatElement.appendChild(slideShowContainer);
 
     oneCatDisplay.innerHTML = '';

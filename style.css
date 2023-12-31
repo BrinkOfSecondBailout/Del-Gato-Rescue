@@ -14,7 +14,6 @@ html {
 }
 
 
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -694,12 +693,8 @@ html {
     font-family: 'Pt Sans';
 }
 
-.selected-cat-picture {
-    width: 300px;
-    height: 330px;
-    border-radius: 20px;
-    padding: 10px;
-    object-fit: cover;
+.cat-tagline {
+    display: block;
 }
 
 .cat-slideshow-container {
