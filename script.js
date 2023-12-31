@@ -209,13 +209,15 @@ function showOneCat(cat) {
         slideShowContainer.appendChild(slide);
     })
 
-    const prevButton = document.createElement('a');
+    const prevButton = document.createElement('img');
+    prevButton.src = "assets/previous.png";
+    prevButton.alt = "previous";
     prevButton.classList.add('prev');
-    prevButton.textContent = '<';
 
-    const nextButton = document.createElement('a');
+    const nextButton = document.createElement('img');
+    nextButton.src = "assets/next.png";
+    nextButton.alt = "next";
     nextButton.classList.add('next');
-    nextButton.textContent = '>';
 
     let currentIndex = 0;
 
