@@ -252,14 +252,21 @@ function showOneCat(cat) {
     selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}, ${cat.contact.address.state}`;
     selectedCatDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
 
-    const oneCatTagDiv = document.createElement('div');
-    oneCatTagDiv.classList.add('cat-tagline');
-    oneCatTagDiv.appendChild(selectedCatTagLine);
-    oneCatTagDiv.appendChild(selectedCatDescription);
+    const selectedCatBioContainer = document.createElement('div');
+    selectedCatBioContainer.classList.add('cat-bio');
+
+    const selectedCatBio = document.createElement('p');
+    selectedCatBio.textContent = `${cat.description}`;
+
+    const selectedCatTagContainer = document.createElement('div');
+    selectedCatTagContainer.classList.add('cat-tagline');
+    selectedCatTagContainer.appendChild(selectedCatTagLine);
+    selectedCatTagContainer.appendChild(selectedCatDescription);
 
     selectedCatElement.appendChild(selectedCatName);
-    selectedCatElement.appendChild(oneCatTagDiv);
+    selectedCatElement.appendChild(selectedCatTagContainer);
     selectedCatElement.appendChild(slideShowContainer);
+    selectedCatElement.appendChild(selectedCatBio);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);
