@@ -300,6 +300,7 @@ html {
     display: none;
     width: 400px;
     height: 600px;
+    
 }
 
 
@@ -308,6 +309,7 @@ html {
     height: 80%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
 }
 
 
@@ -641,14 +643,33 @@ html {
 
 
 .cat-picture {
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+.cat-picture:hover {
+    transform: scale(1.06);
+    transition: transform 0.4s ease;
+}
+
+.back-button {
+    width: 50px;
+}
+
+.one-cat {
+
+}
+
+.selected-cat-picture {
     width: 300px;
     height: 330px;
     border-radius: 20px;
     padding: 10px;
     object-fit: cover;
-}
-
-.cat-picture:hover {
-    transform: scale(1.06);
-    transition: transform 0.4s ease;
 }

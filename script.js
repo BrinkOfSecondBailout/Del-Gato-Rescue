@@ -180,6 +180,9 @@ function showAllCats() {
         e.preventDefault();
         
         const adoptableKitties = document.querySelector('.all-cats-wrapper')
+
+        const oneCatDisplay = document.querySelector('.one-cat');
+
         let adoptCatsUrl = 'http://localhost:3000/cats';
         
         try {
@@ -187,9 +190,9 @@ function showAllCats() {
             const adoptableCats = response.data;
 
             adoptableKitties.innerHTML = '';
+            oneCatDisplay.innerHTML = '';
 
             adoptableCats.forEach(cat => {
-                // console.log(cat)
                 const catElement = document.createElement('div');
                 catElement.classList.add('cat');
                 
@@ -200,28 +203,49 @@ function showAllCats() {
                 catImage.alt = cat.name;
 
                 const catImageLink = document.createElement('a');
-                catImageLink.href = "";
+                // catImageLink.href = "";
                 catImageLink.appendChild(catImage);
 
+                catImageLink.addEventListener('click', () => {
+                    adoptableKitties.innerHTML = '';
+
+                    const backButtonElement = document.createElement('img');
+                    backButtonElement.classList.add('back-button');
+                    backButtonElement.src = 'assets/back-button.png';
+                    backButtonElement.alt = 'Go Back';
+
+                    const selectedCatElement = document.createElement('div');
+                    selectedCatElement.classList.add('selected-cat');
+
+                    const selectedCatImage = document.createElement('img');
+                    selectedCatImage.classList.add('selected-cat-picture');
+                    selectedCatImage.src = cat.photos.length > 0 ? cat.photos[0].medium : 'assets/no-image.jpg';
+                    selectedCatImage.alt = cat.name;
+
+                    const selectedCatName = document.createElement('h2');
+                    selectedCatName.textContent = cat.name;
+
+                    const selectedCatDescription = document.createElement('p');
+                    selectedCatDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
+
+                    selectedCatElement.appendChild(selectedCatImage);
+                    selectedCatElement.appendChild(selectedCatName);
+                    selectedCatElement.appendChild(selectedCatDescription);
+
+                    oneCatDisplay.appendChild(backButtonElement);
+                    oneCatDisplay.appendChild(selectedCatElement);
+                })
+
                 const catName = document.createElement('a');
-                catName.href = "";
+                // catName.href = "";
                 catName.textContent = cat.name;
-                
+
                 const catDescription = document.createElement('h4');
                 catDescription.textContent = `${cat.age} • ${cat.breeds.primary}`;
 
                 catElement.appendChild(catImageLink);
                 catElement.appendChild(catName);
                 catElement.appendChild(catDescription);
-
-                // const catName = document.createElement('h3');
-                // catName.textContent = cat.name;
-
-                // const catDescription = document.createElement('p');
-                // catDescription.textContent = cat.description;
-
-                // catElement.appendChild(catName);
-                // catElement.appendChild(catDescription);
 
                 adoptableKitties.appendChild(catElement);
             })
@@ -233,6 +257,12 @@ function showAllCats() {
 }
 
 showAllCats();
+
+
+// Show one cat when clicked on
+
+
+
 
 
 // Using XMLHttpRequest to send email
