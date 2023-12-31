@@ -226,7 +226,15 @@ function showOneCat(cat) {
         });
     }
 
-    
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cat.photos.length) % cat.photos.length;
+        showSlide(currentIndex);
+    })
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % cat.photos.length;
+        showSlide(currentIndex);
+    })
 
     // const selectedCatImage = document.createElement('img');
     // selectedCatImage.classList.add('selected-cat-picture');
@@ -242,10 +250,12 @@ function showOneCat(cat) {
     // selectedCatElement.appendChild(selectedCatImage);
     selectedCatElement.appendChild(selectedCatName);
     selectedCatElement.appendChild(selectedCatDescription);
+    selectedCatName.appendChild(prevButton);
+    selectedCatName.appendChild(nextButton);
+    selectedCatElement.appendChild(slideShowContainer);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);
-    oneCatDisplay.appendChild(slideShowContainer);
     oneCatDisplay.appendChild(selectedCatElement);
 }
 
