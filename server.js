@@ -94,6 +94,27 @@ app.get('/cats', async (req, res) => {
     }
 });
 
+async function generateAccessToken() {
+    const apiUrl = process.env.API_URL;
+    const clientId = process.env.API_KEY;
+    const clientSecret  = process.env.SECRET;
+    const grantType = 'client_credentials';
+
+    try {
+        const response = await axios.post(apiUrl, {
+            grant_type: grantType,
+            client_id: clientId,
+            client_secret: clientSecret ,
+        });
+
+        const accessToken = response.data.access_token;
+        console.log(accessToken);
+        return accessToken;
+    } catch (error) {
+        console.error('Error generating access token:', error.message);
+        throw error;
+    }
+}
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
