@@ -269,10 +269,20 @@ function showOneCat(cat) {
     selectedCatBioContainer.classList.add('cat-bio');
 
     const selectedCatBio = document.createElement('p');
+
+    const petfinderDiv = document.createElement('div');
+    petfinderDiv.classList.add('petfinder');
+    const petfinderLogo = document.createElement('img');
+    petfinderLogo.src = 'assets/petfinder.png';
+    petfinderLogo.alt = 'Petfinder Logo';
+    
     const selectedCatLink = document.createElement('a');
     selectedCatLink.href = cat.url;
     selectedCatLink.target = '_blank';
-    selectedCatLink.textContent = `full description of ${cat.name}`;
+    selectedCatLink.textContent = `full description here`;
+    
+    petfinderDiv.appendChild(selectedCatLink);
+    petfinderDiv.appendChild(petfinderLogo);
 
     selectedCatBio.innerHTML = `${cat.description}`;
     selectedCatBioContainer.appendChild(selectedCatBio);
@@ -287,7 +297,7 @@ function showOneCat(cat) {
     selectedCatElement.appendChild(slideShowContainer);
     selectedCatElement.appendChild(selectedCatCharacters);
     selectedCatElement.appendChild(selectedCatBioContainer);
-    selectedCatElement.appendChild(selectedCatLink);
+    selectedCatElement.appendChild(petfinderDiv);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);

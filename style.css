@@ -750,3 +750,15 @@ html {
 .cat-bio p {
     margin: 0 auto;
 }
+
+.petfinder {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.petfinder img {
+    width: 105px;
+    border-radius: 5px;
+}
