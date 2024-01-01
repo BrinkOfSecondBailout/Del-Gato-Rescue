@@ -290,7 +290,7 @@ function showOneCat(cat) {
     const catCriteriasDiv = document.createElement('div');
     catCriteriasDiv.classList.add('cat-criterias');
     const catCriterias = cat.attributes;
-    console.log(catCriterias);
+
     const checkBoxes = [];
     if(catCriterias.shots_current) {
         checkBoxes.push('Vaccinations up to date')
@@ -301,10 +301,27 @@ function showOneCat(cat) {
     if(catCriterias.house_trained) {
         checkBoxes.push('House trained')
     }
+    if(catCriterias.special_needs) {
+        checkBoxes.push('Special needs')
+    };
+
     const checkBoxesString = checkBoxes.join(' | ');
     const checkBoxesTextContent = document.createElement('h4');
     checkBoxesTextContent.textContent = checkBoxesString;
     catCriteriasDiv.appendChild(checkBoxesTextContent);
+
+
+    const catFormDiv = document.createElement('div');
+    catFormDiv.classList.add('cat-form');
+    const catFormIcon = document.createElement('img');
+    catFormIcon.src = 'assets/application-form.png';
+    catFormIcon.alt = 'Application Form';
+    const catFormLink = document.createElement('a')
+    catFormLink.textContent = 'Interested? Fill out a form!'
+    catFormLink.href = 'https://form.jotform.com/212117959297062';
+    catFormLink.target = '_blank';
+    catFormDiv.appendChild(catFormLink);
+    catFormDiv.appendChild(catFormIcon);
 
 
     const catTagContainer = document.createElement('div');
@@ -317,8 +334,9 @@ function showOneCat(cat) {
     catElement.appendChild(slideShowContainer);
     catElement.appendChild(catCharacters);
     catElement.appendChild(catBioContainer);
-    catElement.appendChild(catCriteriasDiv);
     catElement.appendChild(petfinderDiv);
+    catElement.appendChild(catCriteriasDiv);
+    catElement.appendChild(catFormDiv);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);

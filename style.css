@@ -98,7 +98,7 @@ html {
     gap: 20px;
 }
 
-.navigation-links a , .our-work-links a, .one-column a, .testimonials-wrapper a, .one-cat a{
+.navigation-links a , .our-work-links a, .one-column a, .testimonials-wrapper a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -106,7 +106,7 @@ html {
     font-family: 'PT Sans';
 }
 
-.navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after , .one-cat a::after{
+.navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -120,12 +120,12 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover , .testimonials-wrapper a:hover , .one-cat a:hover {
+.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover , .testimonials-wrapper a:hover  {
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after, .testimonials-wrapper a:hover::after , .one-cat a:hover::after {
+.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after, .testimonials-wrapper a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -703,6 +703,11 @@ html {
 
 .one-cat a {
     font-style: italic;
+    text-decoration: underline;
+}
+
+.one-cat a:hover {
+    color: red;
 }
 
 .cat-tagline {
@@ -753,6 +758,7 @@ html {
 
 .cat-criterias {
     margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .petfinder {
@@ -765,4 +771,17 @@ html {
 .petfinder img {
     width: 105px;
     border-radius: 5px;
+}
+
+.cat-form {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.cat-form img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
 }
