@@ -95,7 +95,20 @@ app.get('/cats', async (req, res) => {
     }
 });
 
+// Generate an access token for our API call
+
+let accessTokenData = {
+    token: null,
+    timestamp: 0,
+}
+
 async function generateAccessToken() {
+    const currentTime = Math.floor(Date.now() / 1000);
+
+    if (accessTokenData.token && currentTime - accessTokenData.timestamp < 3600) {
+        return accessTokenData.token;
+    }
+
     const apiUrl = process.env.API_URL;
     const clientId = process.env.API_KEY;
     const clientSecret  = process.env.SECRET;
