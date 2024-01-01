@@ -753,8 +753,8 @@ html {
 
 .petfinder {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
+    justify-content: space-around;
+    width: 330px;
     margin: 0 auto;
 }
 

@@ -192,8 +192,8 @@ function showOneCat(cat) {
     const bottomBackButtonElement = backButtonElement.cloneNode(true);
     bottomBackButtonElement.addEventListener('click', () => goBackToAllCats());
 
-    const selectedCatElement = document.createElement('div');
-    selectedCatElement.classList.add('selected-cat');
+    const catElement = document.createElement('div');
+    catElement.classList.add('selected-cat');
 
     const prevButton = document.createElement('img');
     prevButton.src = "assets/previous.png";
@@ -247,28 +247,28 @@ function showOneCat(cat) {
     })
 
 
-    const selectedCatName = document.createElement('h2');
-    selectedCatName.textContent = cat.name;
+    const catName = document.createElement('h2');
+    catName.textContent = cat.name;
 
-    const selectedCatDescription = document.createElement('p');
-    const selectedCatTagLine = document.createElement('h4');
-    selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}, ${cat.contact.address.state}`;
-    selectedCatDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
+    const catDescription = document.createElement('p');
+    const catTagLine = document.createElement('h4');
+    catTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}, ${cat.contact.address.state}`;
+    catDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
 
     const allTags = cat.tags;
-    const selectedCatCharacters = document.createElement('h5');
-    selectedCatCharacters.classList.add('all-tags')
+    const catCharacters = document.createElement('h5');
+    catCharacters.classList.add('all-tags')
     if(allTags.length > 0) {
         const tagString = allTags.join(' | ');
-        selectedCatCharacters.textContent = tagString;
+        catCharacters.textContent = tagString;
     } else {
-        selectedCatCharacters.textContent = 'No tags available yet';
+        catCharacters.textContent = 'No tags available yet';
     }
 
-    const selectedCatBioContainer = document.createElement('div');
-    selectedCatBioContainer.classList.add('cat-bio');
+    const catBioContainer = document.createElement('div');
+    catBioContainer.classList.add('cat-bio');
 
-    const selectedCatBio = document.createElement('p');
+    const catBio = document.createElement('p');
 
     const petfinderDiv = document.createElement('div');
     petfinderDiv.classList.add('petfinder');
@@ -276,32 +276,33 @@ function showOneCat(cat) {
     petfinderLogo.src = 'assets/petfinder.png';
     petfinderLogo.alt = 'Petfinder Logo';
     
-    const selectedCatLink = document.createElement('a');
-    selectedCatLink.href = cat.url;
-    selectedCatLink.target = '_blank';
-    selectedCatLink.textContent = `full description here`;
+    const catLink = document.createElement('a');
+    catLink.href = cat.url;
+    catLink.target = '_blank';
+    catLink.textContent = `full description here on`;
     
-    petfinderDiv.appendChild(selectedCatLink);
+    petfinderDiv.appendChild(catLink);
     petfinderDiv.appendChild(petfinderLogo);
 
-    selectedCatBio.innerHTML = `${cat.description}`;
-    selectedCatBioContainer.appendChild(selectedCatBio);
+    catBio.innerHTML = `${cat.description}`;
+    catBioContainer.appendChild(catBio);
 
-    const selectedCatTagContainer = document.createElement('div');
-    selectedCatTagContainer.classList.add('cat-tagline');
-    selectedCatTagContainer.appendChild(selectedCatTagLine);
-    selectedCatTagContainer.appendChild(selectedCatDescription);
 
-    selectedCatElement.appendChild(selectedCatName);
-    selectedCatElement.appendChild(selectedCatTagContainer);
-    selectedCatElement.appendChild(slideShowContainer);
-    selectedCatElement.appendChild(selectedCatCharacters);
-    selectedCatElement.appendChild(selectedCatBioContainer);
-    selectedCatElement.appendChild(petfinderDiv);
+    const catTagContainer = document.createElement('div');
+    catTagContainer.classList.add('cat-tagline');
+    catTagContainer.appendChild(catTagLine);
+    catTagContainer.appendChild(catDescription);
+
+    catElement.appendChild(catName);
+    catElement.appendChild(catTagContainer);
+    catElement.appendChild(slideShowContainer);
+    catElement.appendChild(catCharacters);
+    catElement.appendChild(catBioContainer);
+    catElement.appendChild(petfinderDiv);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);
-    oneCatDisplay.appendChild(selectedCatElement);
+    oneCatDisplay.appendChild(catElement);
     oneCatDisplay.appendChild(bottomBackButtonElement);
 }
 
