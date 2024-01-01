@@ -683,6 +683,7 @@ html {
 
 .one-cat h2 {
     font-size: 35px;
+    text-decoration: underline;
     color: white;
     font-family: 'Pt Sans';
 }

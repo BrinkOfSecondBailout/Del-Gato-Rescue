@@ -293,16 +293,18 @@ async function showAllCats() {
     
     try {
 
-        if (cachedCats) {
+        if (cachedCats !== null && cachedCats.length > 0) {
+            console.log('cached');
             displayCats(allCatsContainer, cachedCats);
+        } else {
+            const response = await axios.get(adoptCatsUrl);
+            const adoptableCats = response.data;
+    
+            cachedCats = adoptableCats;
+    
+            displayCats(allCatsContainer, adoptableCats);
         }
 
-        const response = await axios.get(adoptCatsUrl);
-        const adoptableCats = response.data;
-
-        cachedCats = adoptableCats;
-
-        displayCats(allCatsContainer, adoptableCats);
 
     } catch (error) {
         console.error('Error fetching cats:', error.message);

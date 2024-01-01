@@ -71,13 +71,14 @@ app.post('/subscribe', (req, res) => {
 
 
 app.get('/cats', async (req, res) => {
-    const apiKey = process.env.ACCESS_TOKEN;
+    // const apiKey = process.env.ACCESS_TOKEN;
+    const accessToken = await generateAccessToken();
     const apiUrl = 'https://api.petfinder.com/v2/animals';
     const organizationId = process.env.ORGANIZATION_ID;
     try {
         const response = await axios.get(apiUrl, {
             headers: {
-                'Authorization': `Bearer ${apiKey}`,
+                'Authorization': `Bearer ${accessToken}`,
             },
             params: {
                 type: 'cat',
@@ -108,7 +109,8 @@ async function generateAccessToken() {
         });
 
         const accessToken = response.data.access_token;
-        console.log(accessToken);
+        console.log('pinged');
+        // console.log(accessToken);
         return accessToken;
     } catch (error) {
         console.error('Error generating access token:', error.message);
