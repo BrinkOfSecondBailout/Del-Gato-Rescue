@@ -71,7 +71,6 @@ app.post('/subscribe', (req, res) => {
 
 
 app.get('/cats', async (req, res) => {
-    // const apiKey = process.env.ACCESS_TOKEN;
     const accessToken = await generateAccessToken();
     const apiUrl = 'https://api.petfinder.com/v2/animals';
     const organizationId = process.env.ORGANIZATION_ID;
