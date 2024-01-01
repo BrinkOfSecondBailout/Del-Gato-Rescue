@@ -751,6 +751,10 @@ html {
     margin: 0 auto;
 }
 
+.cat-criterias {
+    margin-top: -10px;
+}
+
 .petfinder {
     display: flex;
     justify-content: space-around;

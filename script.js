@@ -210,7 +210,7 @@ function showOneCat(cat) {
     slideShowContainer.appendChild(prevButton);
     slideShowContainer.classList.add('cat-slideshow-container');
 
-    console.log(cat)
+    // console.log(cat)
     
     cat.photos.forEach((photo, index) => {
         const slide = document.createElement('div');
@@ -287,6 +287,25 @@ function showOneCat(cat) {
     catBio.innerHTML = `${cat.description}`;
     catBioContainer.appendChild(catBio);
 
+    const catCriteriasDiv = document.createElement('div');
+    catCriteriasDiv.classList.add('cat-criterias');
+    const catCriterias = cat.attributes;
+    console.log(catCriterias);
+    const checkBoxes = [];
+    if(catCriterias.shots_current) {
+        checkBoxes.push('Vaccinations up to date')
+    }
+    if(catCriterias.spayed_neutered) {
+        checkBoxes.push('Spayed/Neutered')
+    }
+    if(catCriterias.house_trained) {
+        checkBoxes.push('House trained')
+    }
+    const checkBoxesString = checkBoxes.join(' | ');
+    const checkBoxesTextContent = document.createElement('h4');
+    checkBoxesTextContent.textContent = checkBoxesString;
+    catCriteriasDiv.appendChild(checkBoxesTextContent);
+
 
     const catTagContainer = document.createElement('div');
     catTagContainer.classList.add('cat-tagline');
@@ -298,6 +317,7 @@ function showOneCat(cat) {
     catElement.appendChild(slideShowContainer);
     catElement.appendChild(catCharacters);
     catElement.appendChild(catBioContainer);
+    catElement.appendChild(catCriteriasDiv);
     catElement.appendChild(petfinderDiv);
 
     oneCatDisplay.innerHTML = '';
