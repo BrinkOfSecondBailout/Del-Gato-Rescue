@@ -663,7 +663,7 @@ html {
     }
 
     50% {
-        transform: translateX(20%);
+        transform: translateX(15%);
     }
 
     100% {
@@ -776,7 +776,7 @@ html {
 .cat-form {
     display: flex;
     justify-content: space-around;
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
 }
 
