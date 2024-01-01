@@ -98,7 +98,7 @@ html {
     gap: 20px;
 }
 
-.navigation-links a , .our-work-links a, .one-column a, .testimonials-wrapper a{
+.navigation-links a , .our-work-links a, .one-column a, .testimonials-wrapper a, .one-cat a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -106,7 +106,7 @@ html {
     font-family: 'PT Sans';
 }
 
-.navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after{
+.navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after , .one-cat a::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -120,12 +120,12 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover , .testimonials-wrapper a:hover {
+.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover , .testimonials-wrapper a:hover , .one-cat a:hover {
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after, .testimonials-wrapper a:hover::after {
+.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after, .testimonials-wrapper a:hover::after , .one-cat a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -672,16 +672,17 @@ html {
 }
 
 .back-button {
-    width: 40px;
+    margin-top: 10px;
+    width: 110px;
     cursor: pointer;
-    animation: hoverLeftToRight 0.7s infinite;
+    animation: hoverLeftToRight 0.8s infinite;
 }
 
 .one-cat {
-    margin-top: 10px;
 }
 
 .one-cat h2 {
+    margin-top: -2px;
     font-size: 35px;
     text-decoration: underline;
     color: white;
@@ -692,6 +693,16 @@ html {
     font-size: 22px;
     color: white;
     font-family: 'Pt Sans';
+}
+
+.one-cat h5 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Pt Sans';
+}
+
+.one-cat a {
+    font-style: italic;
 }
 
 .cat-tagline {
@@ -725,6 +736,17 @@ html {
     padding-left: 10px;
 }
 
+.all-tags {
+    margin: 0 auto;
+    width: 700px;
+}
+
 .cat-bio {
-    
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cat-bio p {
+    margin: 0 auto;
 }

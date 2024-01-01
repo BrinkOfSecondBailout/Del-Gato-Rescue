@@ -185,9 +185,12 @@ function showOneCat(cat) {
 
     const backButtonElement = document.createElement('img');
     backButtonElement.classList.add('back-button');
-    backButtonElement.src = 'assets/back-button2.png';
+    backButtonElement.src = 'assets/back-button3.png';
     backButtonElement.alt = 'Go Back';
     backButtonElement.addEventListener('click', () => goBackToAllCats());
+
+    const bottomBackButtonElement = backButtonElement.cloneNode(true);
+    bottomBackButtonElement.addEventListener('click', () => goBackToAllCats());
 
     const selectedCatElement = document.createElement('div');
     selectedCatElement.classList.add('selected-cat');
@@ -207,7 +210,7 @@ function showOneCat(cat) {
     slideShowContainer.appendChild(prevButton);
     slideShowContainer.classList.add('cat-slideshow-container');
 
-    // console.log(cat)
+    console.log(cat)
     
     cat.photos.forEach((photo, index) => {
         const slide = document.createElement('div');
@@ -252,11 +255,27 @@ function showOneCat(cat) {
     selectedCatTagLine.textContent = `${cat.breeds.primary} • ${cat.contact.address.city}, ${cat.contact.address.state}`;
     selectedCatDescription.textContent = `${cat.age} •  ${cat.gender} • ${cat.size} • ${cat.colors.primary}`;
 
+    const allTags = cat.tags;
+    const selectedCatCharacters = document.createElement('h5');
+    selectedCatCharacters.classList.add('all-tags')
+    if(allTags.length > 0) {
+        const tagString = allTags.join(' | ');
+        selectedCatCharacters.textContent = tagString;
+    } else {
+        selectedCatCharacters.textContent = 'No tags available yet';
+    }
+
     const selectedCatBioContainer = document.createElement('div');
     selectedCatBioContainer.classList.add('cat-bio');
 
     const selectedCatBio = document.createElement('p');
+    const selectedCatLink = document.createElement('a');
+    selectedCatLink.href = cat.url;
+    selectedCatLink.target = '_blank';
+    selectedCatLink.textContent = `full description of ${cat.name}`;
+
     selectedCatBio.innerHTML = `${cat.description}`;
+    selectedCatBioContainer.appendChild(selectedCatBio);
 
     const selectedCatTagContainer = document.createElement('div');
     selectedCatTagContainer.classList.add('cat-tagline');
@@ -266,11 +285,14 @@ function showOneCat(cat) {
     selectedCatElement.appendChild(selectedCatName);
     selectedCatElement.appendChild(selectedCatTagContainer);
     selectedCatElement.appendChild(slideShowContainer);
-    selectedCatElement.appendChild(selectedCatBio);
+    selectedCatElement.appendChild(selectedCatCharacters);
+    selectedCatElement.appendChild(selectedCatBioContainer);
+    selectedCatElement.appendChild(selectedCatLink);
 
     oneCatDisplay.innerHTML = '';
     oneCatDisplay.appendChild(backButtonElement);
     oneCatDisplay.appendChild(selectedCatElement);
+    oneCatDisplay.appendChild(bottomBackButtonElement);
 }
 
 // Go Back Button to Return to All Cats
