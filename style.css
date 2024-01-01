@@ -87,6 +87,31 @@ html {
     width: 50px;
 }
 
+.contact-links {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.contact-div p {
+    font-size: 14px;
+    color: white;
+    font-family: 'Titillium Web';
+}
+
 .social-icon:hover {
     transform: scale(1.15);
     transition: transform 0.3s ease;
@@ -683,7 +708,7 @@ html {
 
 .one-cat h2 {
     margin-top: -2px;
-    font-size: 35px;
+    font-size: 40px;
     text-decoration: underline;
     color: white;
     font-family: 'Pt Sans';
@@ -704,6 +729,7 @@ html {
 .one-cat a {
     font-style: italic;
     text-decoration: underline;
+    font-size: 17px;
 }
 
 .one-cat a:hover {
@@ -764,7 +790,7 @@ html {
 .petfinder {
     display: flex;
     justify-content: space-around;
-    width: 330px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -776,12 +802,12 @@ html {
 .cat-form {
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    width: 260px;
     margin: 0 auto;
 }
 
 .cat-form img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-top: -10px;
 }
