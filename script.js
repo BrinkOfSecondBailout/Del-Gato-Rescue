@@ -256,7 +256,7 @@ function showOneCat(cat) {
     selectedCatBioContainer.classList.add('cat-bio');
 
     const selectedCatBio = document.createElement('p');
-    selectedCatBio.textContent = `${cat.description}`;
+    selectedCatBio.innerHTML = `${cat.description}`;
 
     const selectedCatTagContainer = document.createElement('div');
     selectedCatTagContainer.classList.add('cat-tagline');
@@ -348,92 +348,4 @@ function displayCats(container, cats) {
 };
 
 showAllCats();
-
-
-
-
-
-
-
-// Using XMLHttpRequest to send email
-
-// const contactForm = document.querySelector('.contact-form')
-
-// let inputName = document.getElementById('name');
-// let inputPhone = document.getElementById('phone');
-// let inputEmail = document.getElementById('email');
-// let inputAddress = document.getElementById('address');
-// let inputReason = document.getElementById('reason');
-// let inputMessage = document.getElementById('message');
-
-// contactForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     let formData = {
-//         name: inputName.value,
-//         phone: inputPhone.value,
-//         email: inputEmail.value,
-//         address: inputAddress.value,
-//         reason: inputReason.value,
-//         message: inputMessage.value,
-//     }
-
-//     let xhr = new XMLHttpRequest();
-//     xhr.open('POST', 'http://localhost:3000/contact');
-//     xhr.setRequestHeader('content-type', 'application/json');
-//     xhr.onload = function() {
-//         console.log(xhr.responseText);
-
-//         if(xhr.responseText == 'success') {
-//             alert('Email sent! Thank you for your inquiry!');
-//             inputName.value = '';
-//             inputPhone.value = '';
-//             inputEmail.value = '';
-//             inputAddress.value = '';
-//             inputReason.value = '';
-//             inputMessage.value = '';
-//         } else {
-//             alert('Something went wrong... please try again later');
-//         }
-//     }
-
-//     xhr.send(JSON.stringify(formData));
-
-// })
-
-
-// Using XMLHttpRequest to send email to subscriber's list
-
-// const subscribeForm = document.querySelector('.subscribe-form')
-
-// let subscribeEmail = document.getElementById('subscribe');
-
-// subscribeForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     let subscriptionData = {
-//         email: subscribeEmail.value
-//     }
-
-//     let xhr = new XMLHttpRequest();
-//     xhr.open('POST', 'http://localhost:3000/subscribe');
-//     xhr.setRequestHeader('content-type', 'application/json');
-//     xhr.onload = function() {
-//         console.log(xhr.responseText);
-
-//         if(xhr.responseText == 'success') {
-//             alert('Thank you! You are now subscribed!');
-//             subscribeEmail.value = '';
-//         } else {
-//             alert('Something went wrong... please try again later');
-//         }
-//     }
-
-//     xhr.send(JSON.stringify(subscriptionData));
-// })
-
-
-
-
-
 
