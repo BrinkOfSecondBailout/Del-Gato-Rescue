@@ -45,10 +45,10 @@ subscribeForm.addEventListener('submit', async (e) => {
         email: subscribeEmail.value,
     };
 
-    let liveServerUrl = process.env.PORT || 3000;
+    let liveServerUrl = 'http://localhost:3000/subscribe';
 
     try {
-        const response = await axios.post(liveServerUrl + '/subscribe', subscriptionData);
+        const response = await axios.post(liveServerUrl, subscriptionData);
 
         console.log(response.data);
 
@@ -148,10 +148,10 @@ contactForm.addEventListener('submit', async (e) => {
         message: inputMessage.value,
     };
 
-    let liveServerUrl = process.env.PORT || 3000;
+    let liveServerUrl = 'http://localhost:3000/contact';
 
     try {
-        const response = await axios.post(liveServerUrl + '/contact', formData);
+        const response = await axios.post(liveServerUrl, formData);
 
         console.log(response.data);
 
@@ -360,7 +360,7 @@ let cachedCats = null;
 async function showAllCats() {
     const allCatsContainer = document.querySelector('.all-cats-wrapper')
 
-    let liveServerUrl = process.env.PORT || 3000;
+    let adoptCatsUrl = 'http://localhost:3000/cats';
     
     try {
 
@@ -368,7 +368,7 @@ async function showAllCats() {
             console.log('cached');
             displayCats(allCatsContainer, cachedCats);
         } else {
-            const response = await axios.get(liveServerUrl + '/cats');
+            const response = await axios.get(adoptCatsUrl);
             const adoptableCats = response.data;
     
             cachedCats = adoptableCats;
