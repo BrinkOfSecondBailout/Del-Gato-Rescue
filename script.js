@@ -1,4 +1,4 @@
-let baseUrl = 'https://delgatorescue.vercel.app/'
+let baseUrl = process.env.PORT;
 
 // all function callbacks upon loading
 
