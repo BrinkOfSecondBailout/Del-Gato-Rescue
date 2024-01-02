@@ -1,3 +1,5 @@
+let baseUrl = 'https://delgatorescue.vercel.app/'
+
 // all function callbacks upon loading
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -45,10 +47,10 @@ subscribeForm.addEventListener('submit', async (e) => {
         email: subscribeEmail.value,
     };
 
-    let liveServerUrl = 'http://localhost:3000/subscribe';
+    // let liveServerUrl = 'http://localhost:3000/subscribe';
 
     try {
-        const response = await axios.post(liveServerUrl, subscriptionData);
+        const response = await axios.post(baseUrl + 'subscribe', subscriptionData);
 
         console.log(response.data);
 
@@ -148,10 +150,10 @@ contactForm.addEventListener('submit', async (e) => {
         message: inputMessage.value,
     };
 
-    let liveServerUrl = 'http://localhost:3000/contact';
+    // let liveServerUrl = 'http://localhost:3000/contact';
 
     try {
-        const response = await axios.post(liveServerUrl, formData);
+        const response = await axios.post(baseUrl + 'contact', formData);
 
         console.log(response.data);
 
@@ -360,7 +362,7 @@ let cachedCats = null;
 async function showAllCats() {
     const allCatsContainer = document.querySelector('.all-cats-wrapper')
 
-    let adoptCatsUrl = 'http://localhost:3000/cats';
+    // let adoptCatsUrl = 'http://localhost:3000/cats';
     
     try {
 
@@ -368,7 +370,7 @@ async function showAllCats() {
             console.log('cached');
             displayCats(allCatsContainer, cachedCats);
         } else {
-            const response = await axios.get(adoptCatsUrl);
+            const response = await axios.get(baseUrl + 'cats');
             const adoptableCats = response.data;
     
             cachedCats = adoptableCats;
