@@ -28,6 +28,7 @@ exports.handler = async function (event, context) {
             body: JSON.stringify({ message: 'success' }),
         };
     } catch (error) {
+        console.log('hi')
         console.error(error);
 
         return {
