@@ -1,4 +1,4 @@
-const liveEndPoint = '/.netlify/functions/';
+const liveEndPoint = '/.netlify/functions';
 
 // all function callbacks upon loading
 
@@ -48,7 +48,7 @@ subscribeForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await axios.post(liveEndPoint + 'subscribe', subscriptionData);
+        const response = await axios.post(`${liveEndPoint}/subscribe`, subscriptionData);
 
         console.log(response.data);
 
@@ -151,7 +151,7 @@ contactForm.addEventListener('submit', async (e) => {
     // let liveServerUrl = '/.netlify/functions/contact';
 
     try {
-        const response = await axios.post(liveEndPoint + 'contact', formData);
+        const response = await axios.post(`${liveEndPoint}/contact`, formData);
 
         console.log(response.data);
 
@@ -368,7 +368,7 @@ async function showAllCats() {
             console.log('cached');
             displayCats(allCatsContainer, cachedCats);
         } else {
-            const response = await axios.get(liveEndPoint + 'cats');
+            const response = await axios.get(`${liveEndPoint}/cats`);
             const adoptableCats = response.data;
     
             cachedCats = adoptableCats;
