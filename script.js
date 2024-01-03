@@ -52,7 +52,7 @@ subscribeForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if (response.data === 'success') {
+        if (response.data.message === 'success') {
             alert('Thank you! You are now subscribed!');
             subscribeEmail.value = '';
         } else {
