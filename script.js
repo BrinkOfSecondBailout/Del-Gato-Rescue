@@ -155,7 +155,7 @@ contactForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if(response.data === 'success') {
+        if(response.data.message === 'success') {
             alert('Email sent! Thank you for your inquiry!');
             inputName.value = '';
             inputPhone.value = '';
