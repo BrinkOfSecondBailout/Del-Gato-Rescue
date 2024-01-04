@@ -9,11 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.flex {
-    display: flex;
-}
-
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -156,7 +151,7 @@ html {
 }
 
 .main-logo {
-    width: 160px;
+    width: 120px;
 }
 
 /* Bottom Bar */
@@ -203,7 +198,7 @@ html {
 
 
 .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 {
-    font-size: 100px;
+    font-size: 60px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
@@ -278,6 +273,7 @@ html {
     font-size: 16px;
     color: grey;
 }
+
 
 /* About Us */
 

@@ -19,16 +19,16 @@ async function generateAccessToken() {
 
     try {
         const response = await axios.post(apiUrl, {
-        grant_type: grantType,
-        client_id: clientId,
-        client_secret: clientSecret,
+            grant_type: grantType,
+            client_id: clientId,
+            client_secret: clientSecret,
         });
 
         const accessToken = response.data.access_token;
         console.log('Access token generated');
         accessTokenData = {
-        token: accessToken,
-        timestamp: currentTime,
+            token: accessToken,
+            timestamp: currentTime,
         };
 
         return accessToken;
@@ -45,25 +45,25 @@ exports.handler = async function (event, context) {
         const organizationId = process.env.ORGANIZATION_ID;
 
         const response = await axios.get(apiUrl, {
-        headers: {
-            'Authorization': `Bearer ${accessToken}`,
-        },
-        params: {
-            type: 'cat',
-            organization: organizationId,
-        },
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+            },
+            params: {
+                type: 'cat',
+                organization: organizationId,
+            },
         });
 
         const cats = response.data.animals;
         return {
-        statusCode: 200,
-        body: JSON.stringify(cats),
+            statusCode: 200,
+            body: JSON.stringify(cats),
         };
     } catch (error) {
         console.error('Error fetching cats:', error.message);
         return {
-        statusCode: 500,
-        body: JSON.stringify({ error: 'Internal Server Error' }),
+            statusCode: 500,
+            body: JSON.stringify({ error: 'Internal Server Error' }),
         };
     }
 };
