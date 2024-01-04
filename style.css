@@ -634,11 +634,12 @@ html {
     overflow-y: auto;
     height: 50vh;
     margin-top: 2vh;
+    width: 100vh;
 }
 
 
 .contact-form {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 10px;
     padding: 10px;
     background: transparent;
