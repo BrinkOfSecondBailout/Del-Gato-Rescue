@@ -78,7 +78,7 @@ html {
 }
 
 .navigation-total {
-    margin-top: 15px;
+    margin-top: 3vh;
 }
 
 .social-links {
@@ -251,7 +251,7 @@ html {
 
 .subscribe-button {
     width: 80px;
-    height: 30px;
+    height: 40px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgb(0, 0, 0);
     color: black;
@@ -688,6 +688,7 @@ html {
     height: 25vh;
     padding: 10px;
     margin-right: 2vh;
+    margin-top: -2vh;
 }
 
 .submit {
@@ -698,6 +699,7 @@ html {
     cursor: pointer;
     width: 30vh;
     color: white;
+    margin-top: -1vh;
 }
 
 .submit:hover {
@@ -707,23 +709,31 @@ html {
 /* Petfinder */
 
 .petfinder-content h1 {
-    font-size: 90px;
+    font-size: 60px;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
 
 .petfinder-content {
-    width: 1000px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    width: 100%;
     height: 100%;
+    /* text-align: center; */
+    /* position: relative; */
+    /* margin-bottom: 10vh; */
+    /* height: 100%; */
+}
+
+.petfinder-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vh;
 }
 
 .all-cats {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 530px;
+    height: 47vh;
     margin-top: -7vh;
     background: transparent;
     border-radius: 10px;
