@@ -272,7 +272,7 @@ html {
 
 .about-us-content {
     width: 72%;
-    text-align: center;
+    /* text-align: center; */
     
     /* position: relative; */
     height: 100%;
@@ -297,6 +297,7 @@ html {
 
 .description {
     width: 80%;
+    margin-left: 10vh;
     /* height: 100%; */
 }
 
@@ -310,6 +311,7 @@ html {
 
 .slideshow-container {
     margin-top: 2vh;
+    margin-right: 15vh;
     /* flex: 1; */
     /* position: relative; */
     /* max-width: 100%; */
@@ -454,8 +456,9 @@ html {
 
 .all-columns {
     margin-top: 2vh;
-    width: 95%;
-    margin-left: 5vh;
+    width: 85%;
+    margin: 0 auto;
+    margin-left: 15vh;
     display: flex;
 }
 
@@ -466,6 +469,7 @@ html {
 .one-column {
     flex: 1;
     padding: 25px;
+    /* width: 85%; */
 }
 
 .one-column a {
@@ -477,10 +481,12 @@ html {
     color: white;
     font-size: 16px;
     font-family: 'Titillium Web';
+    width: 85%;
+    margin: 0 auto;
 }
 
 .small-icon {
-    margin-top: 4vh;
+    margin-top: 1vh;
     width: 40px;
 }
 
@@ -502,6 +508,8 @@ html {
 
 .donate-wrapper {
     display: flex;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .donate-left {
@@ -511,13 +519,13 @@ html {
 
 .donate-right {
     flex: 1;
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 
 .donate-left p {
     color: white;
     font-family: 'Titillium Web';
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .thank-you-icon {
@@ -728,12 +736,13 @@ html {
     width: 60%;
     margin: 0 auto;
     margin-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .all-cats {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 47vh;
+    height: 100%;
     margin-top: -7vh;
     background: transparent;
     border-radius: 10px;
