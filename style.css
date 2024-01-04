@@ -511,32 +511,59 @@ html {
 /* Donate */
 
 .donate-content {
-    text-align: center;
-    width: 800px;
-    height: 75%;
-    position: relative;
+    /* text-align: center; */
+    /* width: 800px; */
+    /* height: 75%; */
+    /* position: relative; */
     height: 100%;
-    margin-bottom: 18vh;
+    margin-top: 3vh;
+    width: 95%;
 }
 
-.donate-content p {
+.donate-content h1 {
+    margin-top: 1vh;
+}
+
+.donate-wrapper {
+    display: flex;
+}
+
+.donate-left {
+    flex: 1;
+    margin-left: 10vh;
+}
+
+.donate-right {
+    flex: 1;
+    margin-top: 8vh;
+}
+
+.donate-left p {
     color: white;
     font-family: 'Titillium Web';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .thank-you-icon {
-    margin-top: -8vh;
+    /* margin-top: -8vh; */
 }
 
 .donate-icon {
     width: 200px;
     height: 100px;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* padding-bottom: 10px; */
 }
+
+.donate-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+
 /* Testimonials */
 
 .testimonials-content {
