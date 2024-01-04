@@ -749,19 +749,19 @@ html {
 }
 
 .all-cats a {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-family: 'Pt Sans';
 }
 
 .all-cats h4 {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     font-family: 'Pt Sans';
 }
 
 .all-cats p {
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     letter-spacing: 1px;
     line-height: 1.2;
@@ -771,13 +771,13 @@ html {
 .cat {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 48vh;
 }
 
 
 .cat-picture {
-    width: 250px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     padding: 10px;
     object-fit: cover;
@@ -806,31 +806,31 @@ html {
 }
 
 .back-button {
-    margin-top: 10px;
-    width: 110px;
+    margin-top: 1vh;
+    width: 15vh;
     cursor: pointer;
     animation: hoverLeftToRight 0.8s infinite;
 }
 
 .one-cat {
+    /* padding: 10px; */
 }
 
 .one-cat h2 {
-    margin-top: -2px;
-    font-size: 40px;
+    font-size: 35px;
     text-decoration: underline;
     color: white;
     font-family: 'Pt Sans';
 }
 
 .one-cat h4 {
-    font-size: 22px;
+    font-size: 18px;
     color: white;
     font-family: 'Pt Sans';
 }
 
 .one-cat h5 {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-family: 'Pt Sans';
 }
@@ -838,7 +838,7 @@ html {
 .one-cat a {
     font-style: italic;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .one-cat a:hover {
@@ -856,51 +856,52 @@ html {
 }
 
 .cat-slide img {
-    width: 330px;
-    height: 400px;
+    width: 300px;
+    height: 320px;
     object-fit: cover;
     border-radius: 20px;
     padding: 10px;
 }
 
 .prev {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding-right: 10px;
 }
 
 
 .next {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding-left: 10px;
 }
 
 .all-tags {
     margin: 0 auto;
-    width: 700px;
+    /* width: 700px; */
 }
 
 .cat-bio {
     padding: 10px;
-    width: 500px;
+    width: 80%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 }
 .cat-bio p {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .cat-criterias {
-    margin-top: -10px;
-    margin-bottom: -10px;
+    /* margin-top: -10px; */
+    /* margin-bottom: -10px; */
 }
 
 .petfinder {
     display: flex;
     justify-content: space-around;
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .petfinder img {
@@ -911,8 +912,9 @@ html {
 .cat-form {
     display: flex;
     justify-content: space-around;
-    width: 260px;
+    width: 230px;
     margin: 0 auto;
+    padding: 15px;
 }
 
 .cat-form img {
