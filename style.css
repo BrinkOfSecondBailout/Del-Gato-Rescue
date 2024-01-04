@@ -2,7 +2,8 @@ body {
     background-color: black;
     margin: 0 auto;
     width: 1000px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: "Dosis";
 }
 
 html {
@@ -123,7 +124,7 @@ html {
     color: rgb(255, 255, 255);
     position: relative;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-    font-family: 'PT Sans';
+    /* font-family: 'PT Sans'; */
 }
 
 .navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after {
