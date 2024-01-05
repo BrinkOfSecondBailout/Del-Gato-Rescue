@@ -657,6 +657,11 @@ html {
     /* margin-top: -10px; */
 }
 
+.contact-links p {
+    color: white;
+    text-decoration: none;
+}
+
 .contact-div {
     display: flex;
     align-items: center;
@@ -695,6 +700,10 @@ html {
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+
+.scroll-instruction {
+    display: none;
 }
 
 .contact-form label{
