@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navigationLinks = document.querySelector('.ham-menu-links');
-    const socialLinks = document.querySelector('.ham-social-links');
 
     // Toggle navigation links on hamburger menu click
     hamburgerMenu.addEventListener('click', function () {
         this.classList.toggle('active');
         navigationLinks.classList.toggle('active');
-        socialLinks.classList.toggle('active');
     });
 
     // Close navigation links when a link is clicked (optional)
