@@ -359,4 +359,9 @@
         color: rgba(12, 250, 51, 0.923);
         /* color: rgb(28, 167, 253); */
     }
+
+    .cat-slideshow-container {
+        padding: 10px;
+        flex-direction: column;
+    }
 }
