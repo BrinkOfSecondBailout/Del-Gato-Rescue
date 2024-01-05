@@ -322,6 +322,11 @@
         
     }
 
+    .contact-links p {
+        color: white;
+        text-decoration: none;
+    }
+
     .contact-form select, input, option, textarea{
         margin-top: 5px;
         margin-bottom: 5px;
@@ -363,5 +368,10 @@
     .cat-slideshow-container {
         padding: 10px;
         flex-direction: column;
+    }
+
+    .cat-slide img {
+        width: 330px;
+        height: 400px;
     }
 }
