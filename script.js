@@ -1,5 +1,5 @@
-// const liveEndPoint = '/.netlify/functions';
-const liveEndPoint = 'http://localhost:3000'
+const liveEndPoint = '/.netlify/functions';
+// const liveEndPoint = 'http://localhost:3000'
 
 // all function callbacks upon loading
 
