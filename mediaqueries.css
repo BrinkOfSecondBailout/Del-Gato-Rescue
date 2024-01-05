@@ -2,21 +2,36 @@
 
 
     /* Top Navigations */
-
-    .top-bar {
-        background-color: rgba(0, 0, 0, 0.719);
-    }
     .social-links {
         display: none;
     }
+    
+    .top-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 65vh; */
+        width: 90%;
+    }
+
+    .top-bar {
+        background-color: rgba(0, 0, 0, 0.719);
+        width: 100%;
+    }
 
     .hamburger {
-        align-items: flex-end;
-        margin-right: -8vh;
+        order: 2;
+
+        /* margin-right: -8vh; */
+    }
+
+    .ham-menu-links {
+        order: 3;
     }
 
     .hamburger-menu {
         display: block;
+
     }
 
     .ham-social-links {
@@ -47,12 +62,7 @@
         width: 50px;
     }
 
-    .top-bar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 65vh;
-    }
+    
 
     .navigation-links {
         display: none;
