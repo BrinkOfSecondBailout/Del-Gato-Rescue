@@ -615,6 +615,7 @@ html {
     overflow-x: hidden;
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 20px;
     /* margin-top: -20px; */
 }
 
@@ -676,7 +677,7 @@ html {
 .form-total {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 50vh;
+    height: 45vh;
     margin-top: 2vh;
     width: 100vh;
 }
