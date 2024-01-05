@@ -14,6 +14,9 @@
         background: #515151;
     }
     /* Top Navigations */
+    .main-logo {
+        width: 100px;
+    }
     .social-links {
         display: none;
     }
@@ -225,6 +228,14 @@
         border-bottom: 1px dotted rgb(181, 181, 181);
     }
 
+    .one-category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     .no-border {
         border-bottom: none;
     }
@@ -232,7 +243,7 @@
     .one-column p {
         margin-top: 2vh;
         width: 100%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .our-work-arrow {
@@ -255,18 +266,19 @@
     }
 
     .donate-right {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 3vh;
     }
 
     .heart-icon {
         margin: 0 auto;
     }
-
+    .all-donate-icons {
+        display: flex;
+        flex-direction: column;
+    }
     .donate-icon {
-        width: 150px;
-        height: 100px;
+        width: 120px;
+        height: 85px;
     }
 
     /* Testimonials */
