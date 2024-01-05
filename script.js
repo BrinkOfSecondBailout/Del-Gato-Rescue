@@ -1,5 +1,5 @@
-const liveEndPoint = '/.netlify/functions';
-// const liveEndPoint = 'http://localhost:3000'
+// const liveEndPoint = '/.netlify/functions';
+const liveEndPoint = 'http://localhost:3000'
 
 // all function callbacks upon loading
 
@@ -8,6 +8,28 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
+// for Hamburger Menu on Mobile screens
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navigationLinks = document.querySelector('.ham-menu-links');
+    const socialLinks = document.querySelector('.ham-social-links');
+
+    // Toggle navigation links on hamburger menu click
+    hamburgerMenu.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navigationLinks.classList.toggle('active');
+        socialLinks.classList.toggle('active');
+    });
+
+    // Close navigation links when a link is clicked (optional)
+    document.querySelectorAll('.navigation-links a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            hamburgerMenu.classList.remove('active');
+            navigationLinks.classList.remove('active');
+        });
+    });
+});
 
 // for Navigation Links
 
