@@ -51,7 +51,7 @@
     }
 
     .about-us-content {
-        width: 80%;
+        width: 100%;
     }
 
     .about-us-text {
@@ -113,7 +113,7 @@
     }
 
     .donate-wrapper {
-        width: 90%;
+        width: 95%;
     }
 
     .donate-left p {
@@ -259,6 +259,7 @@
         height: 35vh;
     }
 }
+
 @media screen and (max-width: 600px) {
     ::-webkit-scrollbar-track {
         background: #797979;
@@ -621,6 +622,8 @@
         height: 400px;
     }
 }
+
+
 @media screen and (max-width: 535px) {
     .ham-menu-links.active {
         left: 40vh;
