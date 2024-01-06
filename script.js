@@ -217,7 +217,7 @@ reviewForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if(response.data === 'success') {
+        if(response.data.message === 'success') {
             alert('Review submitted! Thank you for your inquiry!');
             reviewerName.value = '';
             reviewerPhone.value = '';
