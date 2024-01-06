@@ -652,3 +652,22 @@
         left: 20vh;
     }
 }
+
+@media screen and (max-width: 287px) {
+
+    .mySlides {
+        height: 350px;
+    }
+    .small-icon {
+        margin-top: 0vh;
+        width: 30px;
+    }
+    .one-column p {
+        margin-top: 1vh;
+        font-size: 14px;
+    }
+
+    .heart-icon img {
+        display: none;
+    }
+}

@@ -479,12 +479,6 @@ html {
 /* Adopt & Foster */
 
 .adopt-foster-content {
-    /* text-align: center; */
-    /* width: 1000px; */
-    /* height: 75%; */
-    /* position: relative; */
-    /* height: 100%; */
-    /* margin-bottom: 10vh; */
     height: 100%;
 }
 
@@ -508,7 +502,6 @@ html {
 .one-column {
     flex: 1;
     padding: 25px;
-    /* width: 85%; */
 }
 
 .one-column a {
