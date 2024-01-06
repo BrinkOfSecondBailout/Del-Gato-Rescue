@@ -1,8 +1,268 @@
-/* @media screen and (min-width: 402px) { */
+@media screen and (min-width: 1367px) {
+    .wrapper-main {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .main-logo {
+        width: 140px;
+    }
+
+    .top-bar {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .navigation-links a,
+    .our-work-links a,
+    .one-column a,
+    .testimonials-wrapper a {
+        font-size: 20px;
+    }
+
+    .bottom-bar {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 {
+        font-size: 80px;
+    }
+
+    .home-content h4 {
+        font-size: 20px;
+    }
+
+    .home-content a {
+        font-size: 20px;
+    }
+
+    .subscribe-input {
+        width: 400px;
+    }
+
+    .subscribe-button {
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .subscribe-form ::placeholder {
+        font-size: 20px;
+    }
+
+    .about-us-content {
+        width: 80%;
+    }
+
+    .about-us-text {
+        margin-top: -1vh;
+    }
+
+    .about-us-content p {
+        font-size: 19px;
+    }
+
+    .slideshow-container {
+        margin-top: 7vh;
+    }
+
+    .mySlides {
+        width: 350px;
+        height: 550px;
+    }
+
+    .placeholder-pic {
+        height: 400px;
+    }
+
+    .our-work-flex {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .our-work-text {
+        margin-left: 3vh;
+    }
+
+    .our-work-content p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .our-work-flex img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .all-columns {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .one-column a {
+        font-size: 22px;
+    }
+
+    .one-column p {
+        font-size: 19px;
+    }
+
+    .small-icon {
+        margin-top: 4vh;
+        width: 60px;
+    }
+
+    .donate-wrapper {
+        width: 90%;
+    }
+
+    .donate-left p {
+        font-size: 19px;
+    }
+
+    .donate-right {
+        margin-top: 10vh;
+    }
+
+    .donate-icon {
+        width: 220px;
+        height: 140px;
+    }
+
+    .all-reviews {
+        width: 60%;
+        height: 42vh;
+    }
+
+    .one-review h3 {
+        font-size: 18px;
+    }
+
+    .one-review p {
+        font-size: 17px;
+    }
+
+    .contact-links {
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-div p {
+        font-size: 17px;
+    }
+
+    .form-total {
+        height: 50vh;
+        width: 80vh;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+    }
+
+    .contact-form p {
+        font-size: 17px;
+    }
+
+    .contact-form ::placeholder {
+        font-size: 16px;
+    }
+
+    .contact-form select,
+    input,
+    option,
+    textarea {
+        font-size: 18px;
+    }
+
+    .petfinder-content h1 {
+        font-size: 80px;
+    }
+
+    .petfinder-wrapper {
+        width: 80%;
+    }
+
+    .all-cats a {
+        font-size: 22px;
+    }
+
+    .all-cats h4 {
+        font-size: 16px;
+    }
+
+    .all-cats p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .cat-picture {
+        width: 220px;
+        height: 220px;
+        padding: 15px;
+    }
+
+    .one-cat h2 {
+        font-size: 40px;
+    }
+
+    .one-cat h4 {
+        font-size: 22px;
+    }
+
+    .one-cat h5 {
+        font-size: 17px;
+    }
+
+    .one-cat a {
+        font-size: 18px;
+    }
+
+    .cat-slide img {
+        width: 350px;
+        height: 420px;
+    }
+
+    .prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .petfinder {
+        width: 330px;
+    }
+
+    .petfinder img {
+        width: 120px;
+    }
+
+    .cat-form {
+        width: 280px;
+    }
+
+    .cat-form img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cat {
+        height: 35vh;
+    }
+}
 @media screen and (max-width: 600px) {
     ::-webkit-scrollbar-track {
         background: #797979;
-        border-radius: 10px;
+        border-radius: 9px;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -13,14 +273,16 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #515151;
     }
+
     /* Top Navigations */
     .main-logo {
         width: 100px;
     }
+
     .social-links {
         display: none;
     }
-    
+
     .top-bar-wrapper {
         display: flex;
         justify-content: space-between;
@@ -49,9 +311,7 @@
     .ham-social-links {
         display: flex;
         position: relative;
-        /* gap: 5px; */
         justify-content: end;
-        /* padding-top: 5px; */
     }
 
     .ham-menu-links.active {
@@ -60,7 +320,7 @@
         background-color: rgb(67, 67, 67);
         position: absolute;
         top: 60px;
-        left: 25vh;
+        left: 48vh;
         border-radius: 10px;
         box-shadow: 0 0 50px rgba(0, 0, 0, .5);
         z-index: 1;
@@ -74,7 +334,7 @@
         width: 50px;
     }
 
-    
+
 
     .navigation-links {
         display: none;
@@ -104,17 +364,6 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-
-
-    /* Main background and container contents*/
-
-    /* body {
-        background-image: url(/assets/bg-pic4.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed !important;
-        overflow-x: hidden;
-    } */
-
     body:before {
         content: "";
         display: block;
@@ -125,10 +374,6 @@
         height: 100%;
         z-index: -10;
         background: url(/assets/bg-pic4.jpg) no-repeat center center;
-        /* -webkit-background-size: cover; */
-        /* -moz-background-size: cover; */
-        /* -o-background-size: cover; */
-        /* background-size: cover; */
     }
 
     .video-section {
@@ -145,9 +390,6 @@
 
     /* Home page */
 
-    .home-content {
-    }
-
     .home-content h4 {
         color: rgba(12, 250, 51, 0.923);
     }
@@ -157,7 +399,6 @@
 
     .about-us-content {
         width: 100%;
-        /* height: 140vh; */
     }
 
     .about-us-wrapper {
@@ -180,27 +421,23 @@
 
 
     /* Our Work Section */
-    .our-work-content {
-        /* height: 135vh; */
-    }
 
 
     .our-work-flex {
         width: 95%;
         height: 60vh;
         flex-direction: column;
-        /* background:none; */
         backdrop-filter: none;
         box-shadow: none;
-
         background-color: rgba(98, 97, 97, 0.709);
-
     }
+
     .our-work-content p {
         font-size: 14px;
         line-height: 1.2;
-        
+
     }
+
     .work-picture {
         margin-top: -5vh;
     }
@@ -224,7 +461,6 @@
 
     .one-column a {
         color: rgba(12, 250, 51, 0.923);
-        /* color: rgb(28, 167, 253); */
         text-decoration: underline;
     }
 
@@ -253,9 +489,8 @@
     .our-work-arrow {
         display: none;
     }
+
     /* Donate page */
-    .donate-content {
-    }
 
     .donate-wrapper {
         flex-direction: column;
@@ -266,6 +501,7 @@
     .donate-left {
         margin-left: 0;
     }
+
     .donate-left p {
         margin-top: 2vh;
     }
@@ -277,10 +513,12 @@
     .heart-icon {
         margin: 0 auto;
     }
+
     .all-donate-icons {
         display: flex;
         flex-direction: column;
     }
+
     .donate-icon {
         width: 120px;
         height: 85px;
@@ -291,7 +529,10 @@
     .all-reviews {
         width: 95%;
         height: 60vh;
+        background-color: rgba(49, 49, 49, 0.3);
+        border-radius: 20px;
     }
+
 
     .testimonials-wrapper a {
         color: rgba(12, 250, 51, 0.923);
@@ -305,9 +546,11 @@
         margin-top: 3vh;
         gap: 5vh;
     }
+
     .scroll-instruction {
         display: block;
     }
+
     .form-total {
         width: 100%;
         height: 60vh;
@@ -319,7 +562,7 @@
         box-shadow: none;
         border-radius: none;
         background-color: rgba(49, 49, 49, 0.575);
-        
+
     }
 
     .contact-links p {
@@ -327,7 +570,10 @@
         text-decoration: none;
     }
 
-    .contact-form select, input, option, textarea{
+    .contact-form select,
+    input,
+    option,
+    textarea {
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -347,10 +593,11 @@
     .petfinder-wrapper {
         width: 85%;
     }
+
     .all-cats {
         background-color: rgba(49, 49, 49, 0.3);
     }
-    
+
     .all-cats h4 {
         font-size: 18px;
     }
@@ -362,7 +609,6 @@
 
     .one-cat a {
         color: rgba(12, 250, 51, 0.923);
-        /* color: rgb(28, 167, 253); */
     }
 
     .cat-slideshow-container {
@@ -373,5 +619,36 @@
     .cat-slide img {
         width: 330px;
         height: 400px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .ham-menu-links.active {
+        left: 40vh;
+    }
+}
+@media screen and (max-width: 475px) {
+
+    .ham-menu-links.active {
+        left: 32vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 413px) {
+    .ham-menu-links.active {
+        left: 27vh;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .ham-menu-links.active {
+        left: 22vh;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .ham-menu-links.active {
+        left: 20vh;
     }
 }

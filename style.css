@@ -6,9 +6,9 @@
 body {
     background-color: black;
     margin: 0 auto;
-    /* width: 1000px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -83,24 +83,19 @@ html {
 
 
 .top-bar {
-    /* display: flex; */
-    /* justify-content: space-between; */
     width: 100%;
-    /* align-items: center; */
     position: fixed;
     top: 0;
     z-index: 1000;
     background: transparent;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
-    /* padding-top: 10px; */
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
 }
 
 .top-bar-wrapper {
-    /* width: 100%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -301,9 +296,8 @@ html {
 /* About Us */
 
 .about-us-content {
-    width: 72%;
+    width: 70%;
     /* text-align: center; */
-    
     /* position: relative; */
     height: 100%;
     /* margin-bottom: 15vh; */
@@ -316,7 +310,7 @@ html {
 .about-us-wrapper {
     display: flex;
     align-items: center;
-    /* margin-top: -5vh; */
+    margin-top: 5vh;
 }
 
 .about-us-text {
@@ -440,6 +434,7 @@ html {
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     overflow-y: auto;
+    overflow-x: hidden;
     height: 42vh;
     margin-top: 3vh;
     padding-bottom: 20px;
@@ -500,7 +495,7 @@ html {
 
 .all-columns {
     margin-top: 2vh;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     margin-left: 15vh;
     display: flex;
@@ -552,7 +547,7 @@ html {
 
 .donate-wrapper {
     display: flex;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -744,8 +739,8 @@ html {
 }
 
 .message-box {
-    width: 70vh;
-    height: 25vh;
+    width: 50vh;
+    height: 20vh;
     padding: 10px;
     margin-right: 2vh;
     margin-top: -2vh;
