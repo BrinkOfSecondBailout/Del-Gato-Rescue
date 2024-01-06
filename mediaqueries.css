@@ -55,7 +55,7 @@
     }
 
     .about-us-text {
-        margin-top: -1vh;
+        /* margin-top: -1vh; */
     }
 
     .about-us-content p {
@@ -63,7 +63,7 @@
     }
 
     .slideshow-container {
-        margin-top: 7vh;
+        /* margin-top: 7vh; */
     }
 
     .mySlides {
