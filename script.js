@@ -146,6 +146,95 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// for Testimonials Reviews
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get references to the relevant DOM elements
+    const leaveReviewLink = document.querySelector('.testimonials-wrapper a');
+    const allReviewsDiv = document.querySelector('.all-reviews');
+    const leaveReviewDiv = document.querySelector('.leave-review');
+
+    // Function to toggle the visibility of review sections
+    function toggleReviewSections(showAllReviews) {
+        allReviewsDiv.style.display = showAllReviews ? 'block' : 'none';
+        leaveReviewDiv.style.display = showAllReviews ? 'none' : 'block';
+        leaveReviewLink.style.display = showAllReviews ? 'block' : 'none';
+    }
+
+    // Add click event listener to the "Leave Us A Review!" link
+    leaveReviewLink.addEventListener('click', function (event) {
+        // Prevent the default behavior of the link (e.g., navigating to a new page)
+        event.preventDefault();
+
+        // Toggle the visibility of the review sections
+        toggleReviewSections(false);
+
+        // Create and append the "Go Back" link
+        const testimonialsDiv = document.querySelector('.testimonials-wrapper');
+        const goBackLink = document.createElement('a');
+        goBackLink.style.cursor = 'pointer';
+        goBackLink.innerHTML = 'Go Back';
+
+        // Insert the "Go Back" link before the "Leave Us A Review!" link
+        testimonialsDiv.insertBefore(goBackLink, leaveReviewLink);
+
+        // Hide the "Leave Us A Review!" link
+        leaveReviewLink.style.display = 'none';
+    });
+
+    // Event listener for the "Go Back" link
+    document.addEventListener('click', function (event) {
+        const goBackLink = document.querySelector('.testimonials-wrapper a');
+        if (event.target === goBackLink) {
+            // Toggle the visibility of the review sections
+            toggleReviewSections(true);
+
+            // Remove the "Go Back" link
+            goBackLink.parentNode.removeChild(goBackLink);
+        }
+    });
+});
+
+const reviewForm = document.querySelector('.review-form')
+
+let reviewerName = document.getElementById('reviewerName');
+let reviewerPhone = document.getElementById('reviewerPhone');
+let reviewerEmail = document.getElementById('reviewerEmail');
+let reviewerMessage = document.getElementById('reviewerMessage');
+
+reviewForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    let formData = {
+        name: reviewerName.value,
+        phone: reviewerPhone.value,
+        email: reviewerEmail.value,
+        message: reviewerMessage.value,
+    };
+
+    try {
+        const response = await axios.post(`${liveEndPoint}/testimony`, formData);
+
+        console.log(response.data);
+
+        if(response.data === 'success') {
+            alert('Review submitted! Thank you for your inquiry!');
+            reviewerName.value = '';
+            reviewerPhone.value = '';
+            reviewerEmail.value = '';
+            reviewerMessage.value = '';
+        } else {
+            alert('Something went wrong... please try again later');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong... please try again later');
+    }
+});
+
+
+
+
 // for Contact Us Form and Message Box
 
 const contactForm = document.querySelector('.contact-form');

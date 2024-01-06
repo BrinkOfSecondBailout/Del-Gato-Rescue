@@ -19,11 +19,11 @@ html {
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -129,7 +129,7 @@ html {
     gap: 20px;
 }
 
-.navigation-links a , .our-work-links a, .one-column a, .testimonials-wrapper a{
+.navigation-links a , .our-work-links a, .one-column a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -137,7 +137,7 @@ html {
     font-family: 'PT Sans';
 }
 
-.navigation-links a::after , .our-work-links a::after , .one-column a::after , .testimonials-wrapper a::after {
+.navigation-links a::after , .our-work-links a::after , .one-column a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -151,18 +151,18 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover , .testimonials-wrapper a:hover  {
+.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover  {
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after, .testimonials-wrapper a:hover::after {
+.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
 .main-logo {
-    width: 120px;
+    width: 100px;
     margin-top: 1vh;
 }
 
@@ -310,7 +310,7 @@ html {
 .about-us-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .about-us-text {
@@ -357,7 +357,7 @@ html {
     
     width: 100%;
     height: 80%;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     object-fit: cover;
 }
@@ -414,7 +414,7 @@ html {
 .placeholder-pic {
     height: 250px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -428,9 +428,8 @@ html {
     margin-top: -2vh;
     width: 60%;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 5px;
     background: transparent;
-    border-radius: 20px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     overflow-y: auto;
@@ -467,7 +466,7 @@ html {
 .our-work-flex img {
     width: 300px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 5vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     object-fit: cover;
@@ -567,7 +566,7 @@ html {
 .donate-icon {
     width: 200px;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     /* padding-left: 10px; */
@@ -604,7 +603,74 @@ html {
     width: 50%;
     margin: 0 auto;
     padding-bottom: 20px;
-    /* margin-top: -20px; */
+    background-color: rgba(80, 80, 80, 0.483);
+    border-radius: 5px;
+}
+
+.testimonials-wrapper a {
+    color: rgba(255, 255, 255, 0.864);
+    text-decoration: underline;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+}
+
+.leave-review {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 42vh;
+    margin-top: 2vh;
+    width: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+.review-form {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(80, 80, 80, 0.483);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.review-form label {
+    color: white;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+}
+
+.review-form p {
+    color: rgb(255, 123, 123);
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 1vh;
+}
+
+.review-form ::placeholder {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: grey;
+}
+
+.review-form select,
+input,
+option,
+textarea {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Titillium Web';
 }
 
 .one-review {
@@ -674,11 +740,9 @@ html {
 
 
 .contact-form {
-    /* width: 100%; */
-    border-radius: 10px;
+    border-radius:5px;
     padding: 10px;
     background: transparent;
-    border-radius: 20px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     display: flex;
@@ -785,7 +849,7 @@ html {
     height: 100%;
     margin-top: -7vh;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
     backdrop-filter: blur(30px);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     padding: 10px;
@@ -827,7 +891,7 @@ html {
 .cat-picture {
     width: 200px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 10px;
     object-fit: cover;
     cursor: pointer;

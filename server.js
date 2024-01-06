@@ -65,7 +65,33 @@ app.post('/subscribe', (req, res) => {
             res.send('success')
         }
     })
+})
 
+app.post('/testimony', (req, res) => {
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    })
+
+    const mailOptions = {
+        from: req.body.email,
+        to: process.env.EMAIL,
+        subject: `New review from ${req.body.name}`,
+        text: `Congrats! You have a new review from ${req.body.name} phone number: ${req.body.phone} and email: ${req.body.email} and this is what they said: ${req.body.message}`
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if(error) {
+            console.log(error);
+            res.send('error');
+        } else {
+            console.log('Review submission successful: ' + info.response);
+            res.send('success')
+        }
+    })
 })
 
 
