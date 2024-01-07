@@ -614,19 +614,23 @@ html {
     font-size: 18px;
 }
 
+.scroll-instruction  {
+    display: none;
+}
+
 .leave-review {
     overflow-x: hidden;
     overflow-y: auto;
     height: 42vh;
     margin-top: 2vh;
-    width: 100vh;
+    width: 100%;
     margin: 0 auto;
     display: none;
 }
 .review-form {
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(80, 80, 80, 0.483);
+    background-color: rgba(80, 80, 80, 0.47);
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: column;
@@ -652,7 +656,7 @@ html {
 .review-form ::placeholder {
     font-family: 'Titillium Web';
     font-size: 14px;
-    color: grey;
+    color: rgb(167, 167, 167);
 }
 
 .review-form select,
