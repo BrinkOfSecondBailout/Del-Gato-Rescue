@@ -10,7 +10,7 @@ Del Gato is a non-profit cat rescue operation ran by two kind-hearted individual
 Clone the repository
 
 ```bash
-git clone https://github.com/BrinkOfSecondBailout/BargainHunt.git](https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue.git
+git clone https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue.git
 ```
 
 Install dependencies 
