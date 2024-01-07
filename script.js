@@ -217,7 +217,7 @@ reviewForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if(response.data.message === 'success') {
+        if(response.data.status === 'success') {
             alert('Review submitted! Thank you for your inquiry!');
             reviewerName.value = '';
             reviewerPhone.value = '';
@@ -265,7 +265,7 @@ contactForm.addEventListener('submit', async (e) => {
 
         console.log(response.data);
 
-        if(response.data.status === 'success') {
+        if(response.data.message === 'success') {
             alert('Email sent! Thank you for your inquiry!');
             inputName.value = '';
             inputPhone.value = '';
