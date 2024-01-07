@@ -10,28 +10,13 @@ Del Gato is a non-profit cat rescue operation ran by two kind-hearted individual
 Clone the repository
 
 ```bash
-git clone https://github.com/BrinkOfSecondBailout/BargainHunt.git
+git clone https://github.com/BrinkOfSecondBailout/BargainHunt.git](https://github.com/BrinkOfSecondBailout/Del-Gato-Rescue.git
 ```
 
 Install dependencies 
 
 ```bash
 npm install
-```
-
-Navigate into client folder
-```bash
-cd client
-```
-```bash
-npm start
-```
-Navigate into server folder
-```bash
-cd server
-```
-```bash
-nodemon server.js
 ```
 
 ## Questions
