@@ -17,14 +17,14 @@ app.post('/contact', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL,
+            user: process.env.EMAIL_FROM,
             pass: process.env.PASSWORD
         }
     })
     
     const mailOptions = {
         from: req.body.email,
-        to: process.env.EMAIL,
+        to: process.env.EMAIL_TO,
         subject: `Message from ${req.body.email}: ${req.body.reason}`,
         text: `Hello, my name is ${req.body.name}. My phone number is ${req.body.phone}. My location is ${req.body.address}. ${req.body.message}`
     }
@@ -44,14 +44,14 @@ app.post('/subscribe', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL,
+            user: process.env.EMAIL_FROM,
             pass: process.env.PASSWORD
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to: process.env.EMAIL,
+        to: process.env.EMAIL_TO,
         subject: `New subscription from ${req.body.email}`,
         text: `Congrats! You have a new subscription from ${req.body.email}`
     }
@@ -71,14 +71,14 @@ app.post('/testimony', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL,
+            user: process.env.EMAIL_FROM,
             pass: process.env.PASSWORD
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to: process.env.EMAIL,
+        to: process.env.EMAIL_TO,
         subject: `New review from ${req.body.name}`,
         text: `Congrats! You have a new review from ${req.body.name} phone number: ${req.body.phone} and email: ${req.body.email} and this is what they said: ${req.body.message}`
     }

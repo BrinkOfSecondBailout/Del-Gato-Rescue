@@ -11,7 +11,7 @@ exports.handler = async function (event, context) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL,
+            user: process.env.EMAIL_FROM,
             pass: process.env.PASSWORD,
         },
     });
@@ -20,7 +20,7 @@ exports.handler = async function (event, context) {
 
     const mailOptions = {
         from: email,
-        to: process.env.EMAIL,
+        to: process.env.EMAIL_TO,
         subject: `New review from ${name}`,
         text: `Congrats! You have a new review from ${name} phone number: ${phone} and email: ${email} and this is what they said: ${message}`,
     };
