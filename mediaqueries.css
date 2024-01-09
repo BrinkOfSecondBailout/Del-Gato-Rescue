@@ -436,9 +436,7 @@
     }
 
     .about-us-text {
-        background-color: #79797992;
         padding: 2px;
-        font-size: 12px;
     }
 
     .about-us-wrapper {
@@ -535,6 +533,10 @@
     .donate-wrapper {
         flex-direction: column;
         margin: 0 auto;
+        width: 95%;
+    }
+
+    .donate-content {
         width: 100%;
     }
 
