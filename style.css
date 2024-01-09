@@ -1076,15 +1076,19 @@ textarea {
 .cat-form {
     display: flex;
     justify-content: space-around;
-    width: 360px;
+    width: 400px;
     margin: 0 auto;
     padding: 15px;
     margin-top: 10px;
 }
 
 .cat-form a {
-    font-size: 25px;
+    font-size: 24px;
     color: rgba(12, 250, 51, 0.923);
+}
+
+.cat-form a:hover {
+    color: rgb(131, 250, 153);
 }
 
 .cat-form img {
