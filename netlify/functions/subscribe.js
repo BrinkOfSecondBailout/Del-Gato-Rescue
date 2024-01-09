@@ -8,14 +8,14 @@ exports.handler = async function (event, context) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: process.env.EMAIL_FROM,
+                user: process.env.EMAIL,
                 pass: process.env.PASSWORD
             }
         });
 
         const mailOptions = {
             from: requestBody.email,
-            to: process.env.EMAIL_TO,
+            to: process.env.EMAIL,
             subject: `New subscription from ${requestBody.email}`,
             text: `Congrats! You have a new subscription from ${requestBody.email}`
         };

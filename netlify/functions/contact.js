@@ -8,14 +8,14 @@ exports.handler = async function (event, context) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: process.env.EMAIL_FROM,
+                user: process.env.EMAIL,
                 pass: process.env.PASSWORD
             }
         });
 
         const mailOptions = {
             from: requestBody.email,
-            to: process.env.EMAIL_TO,
+            to: process.env.EMAIL,
             subject: `Message from ${requestBody.email}: ${requestBody.reason}`,
             text: `Hello, my name is ${requestBody.name}. My phone number is ${requestBody.phone}. My location is ${requestBody.address}. ${requestBody.message}`
         };
