@@ -260,36 +260,33 @@ html {
     margin-top: 5vh;
 }
 
-.subscribe-icon {
-    margin-top: 6vh;
+.main-pic-div {
+    padding-top: 10px;
 }
 
-.subscribe-form {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* width: 1000px; */
+.main-picture {
+    border-radius: 10px;
+    height: 30vh;
+    object-fit:cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
 }
 
-.subscribe-input {
-    width: 350px;
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.subscribe-button {
-    width: 80px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(0, 0, 0);
-    color: black;
+.align-center {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 27px;
 }
 
-.subscribe-button:hover {
-    background-color: white;
-}
-
-.subscribe-form ::placeholder {
-    font-family: 'Titillium Web';
-    font-size: 16px;
-    color: grey;
+.cat-icon {
+    width: 35px;
 }
 
 
@@ -711,9 +708,58 @@ textarea {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 10vh;
+    gap: 8vh;
     /* margin-top: -10px; */
 }
+
+
+.subscribe-div {
+    margin-top: 3vh;
+    background-color: rgba(130, 129, 129, 0.435);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.subscribe-div h4 {
+    color: rgb(239, 105, 105);
+    font-family: 'Titillium Web';
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.subscribe-icon {
+    width: 25px;
+    margin-top: 6vh;
+}
+
+.subscribe-form {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 1000px; */
+}
+
+.subscribe-input {
+    width: 350px;
+}
+
+.subscribe-button {
+    width: 60px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.subscribe-button:hover {
+    background-color: white;
+}
+
+.subscribe-form ::placeholder {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+}
+
 
 
 
@@ -737,7 +783,7 @@ textarea {
 .form-total {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 45vh;
+    height: 42vh;
     margin-top: 2vh;
     width: 100vh;
 }
@@ -1030,13 +1076,20 @@ textarea {
 .cat-form {
     display: flex;
     justify-content: space-around;
-    width: 230px;
+    width: 360px;
     margin: 0 auto;
     padding: 15px;
+    margin-top: 10px;
+}
+
+.cat-form a {
+    font-size: 25px;
+    color: rgba(12, 250, 51, 0.923);
 }
 
 .cat-form img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-top: -10px;
+    animation: hoverUpDown 0.4s infinite;
 }

@@ -37,6 +37,10 @@
         font-size: 20px;
     }
 
+    .main-pic-div {
+        padding: 25px;
+    }
+
     .subscribe-input {
         width: 400px;
     }
@@ -152,6 +156,10 @@
         padding: 20px;
     }
 
+    .subscribe-div h4 {
+        font-size: 16px;
+    }
+
     .contact-icon {
         width: 30px;
         height: 30px;
@@ -252,12 +260,22 @@
     }
 
     .cat-form {
-        width: 280px;
+        width: 370px;
     }
 
     .cat-form img {
         width: 50px;
         height: 50px;
+    }
+
+    .cat-form a {
+        font-size: 25px;
+        color: rgba(12, 250, 51, 0.923);
+    }
+
+    .cat-form img {
+        width: 60px;
+        height: 60px;
     }
 
     .cat {
@@ -395,9 +413,18 @@
     }
 
     /* Home page */
-
+    .home-content {
+    }
+    
+    .home-content h1 {
+        font-size: 55px;
+    }
     .home-content h4 {
         color: rgba(12, 250, 51, 0.923);
+    }
+
+    .main-pic-div {
+        padding: 10px;
     }
 
 
@@ -568,7 +595,7 @@
 
     .form-total {
         width: 100%;
-        height: 60vh;
+        height: 52vh;
         margin: 0 auto;
         margin-top: 3vh;
     }
@@ -630,10 +657,22 @@
         padding: 10px;
         flex-direction: column;
     }
-
+    .cat-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
     .cat-slide img {
         width: 330px;
         height: 400px;
+    }
+    .form-icon {
+        margin-top: 5vh;
+    }
+    .cat-form a {
+        font-size: 25px;
     }
 }
 
@@ -667,6 +706,10 @@
 @media screen and (max-width: 310px) {
     .ham-menu-links.active {
         left: 20vh;
+    }
+
+    .small-icon {
+        display: none;
     }
 }
 

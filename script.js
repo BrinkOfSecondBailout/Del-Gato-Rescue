@@ -423,15 +423,22 @@ function showOneCat(cat) {
 
     const catFormDiv = document.createElement('div');
     catFormDiv.classList.add('cat-form');
+    const catFormImgDiv = document.createElement('div');
     const catFormIcon = document.createElement('img');
     catFormIcon.src = 'assets/application-form.png';
     catFormIcon.alt = 'Application Form';
+    catFormImgDiv.classList.add('form-icon');
+    catFormImgDiv.appendChild(catFormIcon);
+
+    const catFormLinkDiv = document.createElement('div');
     const catFormLink = document.createElement('a')
     catFormLink.textContent = 'Interested? Fill out a form!'
     catFormLink.href = 'https://form.jotform.com/212117959297062';
     catFormLink.target = '_blank';
-    catFormDiv.appendChild(catFormLink);
-    catFormDiv.appendChild(catFormIcon);
+    catFormLinkDiv.appendChild(catFormLink);
+
+    catFormDiv.appendChild(catFormLinkDiv);
+    catFormDiv.appendChild(catFormImgDiv);
 
 
     const catTagContainer = document.createElement('div');
