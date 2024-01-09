@@ -432,7 +432,7 @@ function showOneCat(cat) {
 
     const catFormLinkDiv = document.createElement('div');
     const catFormLink = document.createElement('a')
-    catFormLink.textContent = 'Interested? Fill out a form!'
+    catFormLink.textContent = 'Click here to apply for adoption!';
     catFormLink.href = 'https://form.jotform.com/212117959297062';
     catFormLink.target = '_blank';
     catFormLinkDiv.appendChild(catFormLink);
