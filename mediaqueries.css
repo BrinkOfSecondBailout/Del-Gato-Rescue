@@ -414,6 +414,7 @@
 
     /* Home page */
     .home-content {
+        margin-top: -3vh;
     }
     
     .home-content h1 {
@@ -434,9 +435,15 @@
         width: 100%;
     }
 
+    .about-us-text {
+        background-color: #79797992;
+        padding: 2px;
+        font-size: 12px;
+    }
+
     .about-us-wrapper {
         flex-direction: column;
-        margin-top: 15vh;
+        margin-top: 12vh;
     }
 
     .description {
@@ -457,7 +464,7 @@
 
 
     .our-work-flex {
-        width: 95%;
+        width: 85%;
         height: 60vh;
         flex-direction: column;
         backdrop-filter: none;
@@ -560,7 +567,7 @@
     /* Testimonials */
 
     .all-reviews {
-        width: 95%;
+        width: 85%;
         height: 60vh;
         background-color: rgba(49, 49, 49, 0.3);
         border-radius: 20px;
