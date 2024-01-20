@@ -918,7 +918,7 @@ textarea {
     /* backdrop-filter: blur(30px); */
     box-shadow: 0 0 50px rgba(0, 0, 0, .5);
     background-color: rgba(49, 49, 49, 0.614);
-    padding: 10px;
+    padding: 15px;
 }
 
 .all-cats-wrapper {
@@ -953,6 +953,9 @@ textarea {
     height: 48vh;
 }
 
+.cat a {
+    text-decoration: underline;
+}
 
 .cat-picture {
     width: 200px;

@@ -793,23 +793,39 @@
         width: 150px;
     }
 
+
+
     /* Adoptable Kitties page*/
     .petfinder-content {
-        width: 95%;
+        width: 100%;
     }
     .petfinder-content h1 {
         font-size: 70px;
     }
     .petfinder-wrapper {
-        width: 85%;
+        width: 95%;
     }
 
     .all-cats {
-        background-color: rgba(49, 49, 49, 0.434);
+        background-color: rgba(0, 0, 0, 0.468);
     }
 
     .all-cats h4 {
         font-size: 18px;
+    }
+
+    .cat {
+        padding-bottom: 15vh;
+    }
+
+    .cat a {
+        margin-top: -10px;
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .cat h4 {
+        font-size: 20px;
     }
 
     .cat-picture {
@@ -819,6 +835,16 @@
 
     .one-cat a {
         color: rgba(12, 250, 51, 0.923);
+    }
+
+    .prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .next {
+        width: 40px;
+        height: 40px;
     }
 
     .cat-slideshow-container {
@@ -841,6 +867,9 @@
     }
     .cat-form a {
         font-size: 25px;
+    }
+    .back-button {
+        width: 120px;
     }
 }
 

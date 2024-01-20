@@ -382,9 +382,16 @@ function showOneCat(cat) {
 
     const petfinderDiv = document.createElement('div');
     petfinderDiv.classList.add('petfinder');
+
+    const petLink = document.createElement('a');
+    petLink.href = cat.url;
+    petLink.target = '_blank';
+
     const petfinderLogo = document.createElement('img');
     petfinderLogo.src = 'assets/petfinder.png';
     petfinderLogo.alt = 'Petfinder Logo';
+
+    petLink.appendChild(petfinderLogo);
     
     const catLink = document.createElement('a');
     catLink.href = cat.url;
@@ -392,7 +399,7 @@ function showOneCat(cat) {
     catLink.textContent = `full description here on`;
     
     petfinderDiv.appendChild(catLink);
-    petfinderDiv.appendChild(petfinderLogo);
+    petfinderDiv.appendChild(petLink);
 
     catBio.innerHTML = `${cat.description}`;
     catBioContainer.appendChild(catBio);
@@ -424,11 +431,17 @@ function showOneCat(cat) {
     const catFormDiv = document.createElement('div');
     catFormDiv.classList.add('cat-form');
     const catFormImgDiv = document.createElement('div');
+    const formLink = document.createElement('a');
+    formLink.href ='https://form.jotform.com/212117959297062';
+    formLink.target = '_blank';
+
     const catFormIcon = document.createElement('img');
     catFormIcon.src = 'assets/application-form.png';
     catFormIcon.alt = 'Application Form';
+
+    formLink.appendChild(catFormIcon);
     catFormImgDiv.classList.add('form-icon');
-    catFormImgDiv.appendChild(catFormIcon);
+    catFormImgDiv.appendChild(formLink);
 
     const catFormLinkDiv = document.createElement('div');
     const catFormLink = document.createElement('a')
