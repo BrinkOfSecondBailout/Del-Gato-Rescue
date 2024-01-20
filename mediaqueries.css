@@ -315,6 +315,10 @@
         height: fit-content;
         padding-bottom: 5vh;
     }
+    #petfinder {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
 
 
     ::-webkit-scrollbar-track {
