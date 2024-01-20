@@ -576,8 +576,12 @@
     .all-columns {
         flex-direction: column;
         margin-left: 0;
-        width: 100%;
+        width: 90%;
+        border-radius: 5px;
         margin: 0 auto;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid rgba(255, 255, 255, 0.624);
+        margin-top: 5vh;
     }
 
     .one-column a {
@@ -750,6 +754,12 @@
     .contact-div p {
         font-size: 15px;
     }
+
+    .subscribe-button {
+        width: 100px;
+        height: 40px;
+    }
+
 
     /* .scroll-instruction {
         display: block;
