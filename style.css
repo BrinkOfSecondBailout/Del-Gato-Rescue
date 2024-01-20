@@ -638,8 +638,8 @@ html {
 .review-form {
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(80, 80, 80, 0.47);
-    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+    background-color: rgba(57, 57, 57, 0.709);
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     text-align: center;

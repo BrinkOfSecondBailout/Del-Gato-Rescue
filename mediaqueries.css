@@ -713,15 +713,27 @@
         font-size: 20px;
     }
     .leave-review {
-        height: 70vh;
-    }
-
-    .scroll-instruction p {
-        color: rgb(255, 157, 157);
-        font-family: 'Titillium Web';
-        font-size: 16px;
+        width: 90%;
+        height: fit-content;
+        padding: 10px;
     }
     
+    .review-form label {
+        font-size: 19px;
+    }
+
+    .review-form ::placeholder {
+        font-size: 17px;
+    }
+
+    .review-form input {
+        font-size: 19px;
+    }
+
+    .review-form textarea {
+        width: 80%;
+        height: 130px;
+    }
 
     /* Contact Us page */
 
