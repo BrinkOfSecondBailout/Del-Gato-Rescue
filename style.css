@@ -15,7 +15,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -129,7 +129,7 @@ html {
     gap: 20px;
 }
 
-.navigation-links a , .our-work-links a, .one-column a {
+.navigation-links a , .one-column a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
@@ -137,7 +137,7 @@ html {
     font-family: 'PT Sans';
 }
 
-.navigation-links a::after , .our-work-links a::after , .one-column a::after {
+.navigation-links a::after , .one-column a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -151,12 +151,12 @@ html {
     transition: transform 0.3s ease;
 }
 
-.navigation-links a:hover , .our-work-links a:hover , .one-column a:hover  {
+.navigation-links a:hover , .one-column a:hover  {
     color: rgba(237, 46, 45);
     /* Set the color of the links on hover */
 }
 
-.navigation-links a:hover::after , .our-work-links a:hover::after , .one-column a:hover::after{
+.navigation-links a:hover::after , .one-column a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -242,6 +242,10 @@ html {
     left: 100%;
 }
 
+.mobile-screen-welcome {
+    display: none;
+}
+
 .home-content h1 {
     margin-top: 0vh;
 }
@@ -263,7 +267,8 @@ html {
 
 .main-picture {
     border-radius: 10px;
-    height: 30vh;
+    width: 30vh;
+    height: 40vh;
     object-fit:cover;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
@@ -279,7 +284,8 @@ html {
     display: flex;
     align-items: center;
     gap: 5px;
-    height: 27px;
+    font-size: 20px;
+    /* height: 27px; */
 }
 
 .cat-icon {
@@ -299,6 +305,10 @@ html {
 
 .about-us-content h1 {
     margin-top: 4vh;
+}
+
+.tired-cat {
+    display: none;
 }
 
 .about-us-wrapper {
@@ -383,6 +393,12 @@ html {
     margin-top: 3vh;
 }
 
+.our-work-links a {
+    text-decoration: underline;
+    font-family: 'Titillium Web';
+    color: white;
+}
+
 .our-work-placeholder {
     padding: 20px;
     display: block;
@@ -413,7 +429,8 @@ html {
 }
 
 .our-work-links a.active {
-    color: red;
+    color: rgb(255, 122, 122);
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -435,11 +452,8 @@ html {
 
 .our-work-text {
     padding: 10px;
-    /* width: 40%; */
     margin-top: 2vh;
-    /* margin-left: 5vh; */
     flex: 1;
-    /* max-height: 420px; */
 }
 
 
@@ -706,22 +720,25 @@ textarea {
     display: flex;
     justify-content: center;
     gap: 8vh;
+    padding-bottom: 10px;
     /* margin-top: -10px; */
 }
 
 
 .subscribe-div {
     margin-top: 3vh;
-    background-color: rgba(130, 129, 129, 0.435);
+    background-color: rgba(12, 12, 12, 0.551);
     border-radius: 5px;
     padding: 10px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .subscribe-div h4 {
-    color: rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
     font-family: 'Titillium Web';
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .subscribe-icon {
@@ -733,10 +750,11 @@ textarea {
     /* display: flex; */
     /* justify-content: center; */
     /* width: 1000px; */
+    padding: 10px;
 }
 
 .subscribe-input {
-    width: 350px;
+    width: 280px;
 }
 
 .subscribe-button {
@@ -753,7 +771,7 @@ textarea {
 
 .subscribe-form ::placeholder {
     font-family: 'Titillium Web';
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(184, 184, 184);
 }
 
@@ -811,7 +829,7 @@ textarea {
 .contact-form p {
     color: rgb(255, 123, 123);
     font-family: 'Titillium Web';
-    font-size: 14px;
+    font-size: 18px;
     font-style: italic;
     text-decoration: underline;
     margin-bottom: 1vh;
@@ -819,7 +837,7 @@ textarea {
 
 .contact-form ::placeholder {
     font-family: 'Titillium Web';
-    font-size: 14px;
+    font-size: 16px;
     color: grey;
 }
 
@@ -1093,4 +1111,13 @@ textarea {
     height: 50px;
     margin-top: -10px;
     animation: hoverUpDown 0.4s infinite;
+}
+
+
+#footer-text {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
 }

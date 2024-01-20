@@ -42,7 +42,7 @@
     }
 
     .subscribe-input {
-        width: 400px;
+        width: 320px;
     }
 
     .subscribe-button {
@@ -53,6 +53,9 @@
     .subscribe-form ::placeholder {
         font-size: 20px;
     }
+    .subscribe-form input {
+        font-size: 20px;
+    }
 
     .about-us-content {
         width: 100%;
@@ -60,6 +63,7 @@
 
     .about-us-text {
         /* margin-top: -1vh; */
+
     }
 
     .about-us-content p {
@@ -284,14 +288,43 @@
 }
 
 @media screen and (max-width: 600px) {
+    #home {
+        height: 120vh;
+    }
+    #about-us {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    #our-work {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    #adopt-foster {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    #donate {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    #testimonials {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    #contact {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+
+
     ::-webkit-scrollbar-track {
         background: #797979;
-        border-radius: 9px;
+        border-radius: 5px;
     }
 
     ::-webkit-scrollbar-thumb {
         background: #000000;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -413,13 +446,23 @@
     }
 
     /* Home page */
+    
     .home-content {
         margin-top: -3vh;
     }
     
-    .home-content h1 {
-        font-size: 55px;
+    .mobile-screen-welcome {
+        display: flex;
     }
+
+    .mobile-screen-welcome h1 {
+        font-size: 75px;
+    }
+
+    .full-screen-welcome {
+        display: none;
+    }
+
     .home-content h4 {
         color: rgba(12, 250, 51, 0.923);
     }
@@ -431,12 +474,32 @@
 
     /* About Us page */
 
-    .about-us-content {
-        width: 100%;
+    .tired-cat {
+        display: block;
+        width: 60px;
+        margin-top: -10vh;
     }
 
+    .about-us-content {
+        width: 90%;
+    }
+
+    .about-us-content h1{
+        font-size: 80px;
+    }
+
+
     .about-us-text {
-        padding: 2px;
+        margin-top: 2vh;
+        padding: 12px;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid rgba(255, 255, 255, 0.704);
+        border-radius: 5px;
+        line-height: 25px;
+    }
+
+    .about-us-text p {
+        font-size: 16px;
     }
 
     .about-us-wrapper {
@@ -454,26 +517,42 @@
     }
 
     .mySlides {
-        height: 380px;
+        height: 500px;
     }
 
 
     /* Our Work Section */
+    .our-work-content {
+        width: 95%;
+    }
 
+    .our-work-content h1 {
+        font-size: 80px;
+    }
+
+    .our-work-links {
+        flex-direction: column;
+    }
+
+    .our-work-links a {
+        font-size: 20px;
+    }
 
     .our-work-flex {
-        width: 85%;
-        height: 60vh;
+        width: 95%;
+        height: fit-content;
         flex-direction: column;
         backdrop-filter: none;
         box-shadow: none;
-        background-color: rgba(98, 97, 97, 0.709);
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid rgba(255, 255, 255, 0.624);
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     .our-work-content p {
-        font-size: 14px;
-        line-height: 1.2;
-
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .work-picture {
@@ -487,7 +566,7 @@
     }
 
     .adopt-foster-content h1 {
-        font-size: 50px;
+        font-size: 80px;
     }
 
     .all-columns {
@@ -500,6 +579,7 @@
     .one-column a {
         color: rgba(12, 250, 51, 0.923);
         text-decoration: underline;
+        font-size: 24px;
     }
 
     .one-column {
@@ -514,18 +594,24 @@
         gap: 10px;
     }
 
+
     .no-border {
         border-bottom: none;
     }
 
     .one-column p {
         margin-top: 2vh;
-        width: 100%;
-        font-size: 14px;
+        width: 95%;
+        font-size: 17px;
+        line-height: 2;
     }
 
     .our-work-arrow {
         display: none;
+    }
+
+    .small-icon {
+        width: 60px;
     }
 
     /* Donate page */
@@ -540,12 +626,17 @@
         width: 100%;
     }
 
+    .donate-content h1 {
+        font-size: 80px;
+    }
+
     .donate-left {
         margin-left: 0;
     }
 
     .donate-left p {
-        margin-top: 2vh;
+
+        /* margin-top: 2vh; */
     }
 
     .donate-right {
@@ -559,27 +650,63 @@
     .all-donate-icons {
         display: flex;
         flex-direction: column;
+        
     }
 
     .donate-icon {
-        width: 120px;
-        height: 85px;
+        width: 145px;
+        height: 95px;
+    }
+
+    .donate-text {
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid rgba(255, 255, 255, 0.624);
+        width: 85%;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 4vh;
+    }
+
+    .donate-text p {
+        font-size: 18px;
+    }
+
+    .donate-text span {
+        text-decoration: underline;
+        color: rgb(97, 254, 44);
     }
 
     /* Testimonials */
 
+    .testimonials-content {
+        width: 100%;
+    }
+    .testimonials-content h1 {
+        font-size: 55px;
+    }
+
     .all-reviews {
         width: 85%;
-        height: 60vh;
-        background-color: rgba(49, 49, 49, 0.3);
-        border-radius: 20px;
+        height: fit-content;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .one-review h3 {
+        font-size: 20px;
+    }
+    .one-review p {
+        font-size: 16px;
     }
 
 
     .testimonials-wrapper a {
-        color: rgba(12, 250, 51, 0.923);
+        color: rgb(97, 254, 44);
         text-decoration: underline;
         font-family: 'Titillium Web';
+        font-size: 20px;
     }
     .leave-review {
         height: 70vh;
@@ -588,32 +715,44 @@
     .scroll-instruction p {
         color: rgb(255, 157, 157);
         font-family: 'Titillium Web';
-        font-size: 14px;
+        font-size: 16px;
     }
+    
 
     /* Contact Us page */
 
+    .contact-content h1 {
+        font-size: 65px;
+    }
+
     .contact-links {
         margin-top: 3vh;
-        gap: 5vh;
+        gap: 3vh;
+        padding-bottom: 3vh;
     }
 
-    .scroll-instruction {
-        display: block;
+    .contact-div p {
+        font-size: 15px;
     }
+
+    /* .scroll-instruction {
+        display: block;
+    } */
+
 
     .form-total {
-        width: 87%;
-        height: 52vh;
+        width: 92%;
+        height: fit-content;
         margin: 0 auto;
         margin-top: 3vh;
+        padding: 15px;
     }
 
     .contact-form {
         box-shadow: none;
         border-radius: none;
-        background-color: rgba(49, 49, 49, 0.575);
-
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid white;
     }
 
     .contact-links p {
@@ -627,6 +766,17 @@
     textarea {
         margin-top: 5px;
         margin-bottom: 5px;
+        width: 70%;
+        font-size: 18px;
+    }
+
+
+    .contact-form label  {
+        font-size: 19px;
+    }
+
+    .contact-form option  {
+        font-size: 19px;
     }
 
     .message-box {
@@ -640,7 +790,12 @@
     }
 
     /* Adoptable Kitties page*/
-
+    .petfinder-content {
+        width: 95%;
+    }
+    .petfinder-content h1 {
+        font-size: 70px;
+    }
     .petfinder-wrapper {
         width: 85%;
     }

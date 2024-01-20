@@ -56,14 +56,20 @@
             </div>
         </div>
     
-        <div class="bottom-bar">
+        <!-- <div class="bottom-bar">
             <p>©2023 by Del Gato Rescue</p>
             <p>a 501(c)(3) registered nonprofit organization</p>
-        </div>
+        </div> -->
     
         <section id="home">
             <div class="home-content">
-                <h1><span>Welcome to <br></span>Del Gato Rescue</h1>
+                <div class="full-screen-welcome">
+                    <h1><span>Welcome to <br></span>Del Gato Rescue</h1>
+                </div>
+                <div class="mobile-screen-welcome">
+                    <h1>Del Gato Rescue</h1>
+                </div>
+                
                 <div>
                     <div class="main-pic-div">
                         <img src="assets/jen1.png" class="main-picture">
@@ -82,8 +88,11 @@
             <div class="about-us-content">
                 <h1>About Us</h1>
                 <div class="about-us-wrapper">
+                    <div>
+                        <img src="assets/tired-cat.gif" class="tired-cat">
+                    </div>
                     <div class="about-us-text">
-                        <p class="description">Del Gato is a donation-based, foster-based cat rescue that emerged in early 2020 in response to the homeless cat crisis of Southern California. Del Gato works around the clock to provide a safe landing, veterinary care, and long-term plan for some of the 5 million homeless, feral, abandoned, sick, and injured community cats living on the streets of LA and Orange Counties.<br> <br>Your decision to adopt a cat from Del Gato allows more space for another cat in need to be brought inside and given the care that it deserves and the opportunity for a better life. We believe in TNR as the only solution to the ongoing prevention of cats suffering on the streets and more kittens being born outside into a life of tragedy.
+                        <p class="description">Del Gato is a donation, foster-based cat rescue that emerged early 2020 in response to the homeless cat crisis of Southern California. We work around the clock to provide a safe landing, veterinary care, and long-term plan for some of the 5 million homeless, feral, abandoned, sick, and injured community cats living on the streets of LA and Orange Counties.<br> <br>Your decision to adopt a cat from Del Gato allows more space for another cat in need to be brought inside and given the care that it deserves for a better life. We believe TNR (Trap-Neuter-Return) is the only solution to the ongoing suffering of street cats and kittens being born into a life of tragedy.
                         Thank you for your support!</p>
                     </div>
                     <div class="slideshow-container">
@@ -112,11 +121,12 @@
                     <div class="our-work-links">
                         <a href="#adoption">Adoption</a>
                         <a href="#rescue">Rescue</a>
-                        <a href="#tnr">TNR (Trap-Neuter-Return)</a>
+                        <a href="#tnr">Trap-Neuter-Return</a>
                     </div>
+                    
                     <div class="our-work-placeholder">
                         <img src="assets/up-arrow2.png" alt="Up arrow" class="arrow-pic">
-                        <p>Click to learn more</p>
+                        <p>Click one of the links above to learn more</p>
                         <img src="assets/grace.png" alt="Baby Grace Picture" class="placeholder-pic">
                     </div>
                     <div class="our-work-flex" id="adoption">
@@ -206,9 +216,9 @@
                         </div>
                         <div class="one-category">
                             <p>
-                                By opting to foster a cat through our program, you not only offer a nurturing home to a feline companion,
-                                but also play a crucial role in saving two lives simultaneously. Your act of kindness provide a safe haven
-                                for the fostered cat, plus creates the space necessary for us to rescue another cat, thus doubling the
+                                By fostering a cat through our program, you not only offer a nurturing home to a feline companion,
+                                but also play a crucial role in saving two lives simultaneously. Your act of kindness provides a safe haven
+                                for the fostered cat, plus creates the space necessary for us to rescue another cat, doubling the
                                 impact.
                             </p>
                             <img src="assets/kitty-icon.png" alt="Kitty Icon" class="small-icon">
@@ -236,8 +246,8 @@
                                 Your support will help us provide a safe and loving environment for cats in need, promote responsible pet
                                 ownership through education and community outreach, and implement TNR programs to address the root cause of cat
                                 overpopulation in Southern California. We are deeply grateful for your generosity and for joining us in our
-                                mission to make a difference in the lives of cats and their communities.
-                            </p>
+                                mission to make a difference in the lives of cats and their communities.<br><br>
+                            <span>Please click an option below to make a donation</span></p>
                         </div>
                     </div>
                     <div class="donate-right">
@@ -339,9 +349,9 @@
                 <div class="form-total">
                     <form class="contact-form">
                         <p>All fields required*</p>
-                        <div class="scroll-instruction">
+                        <!-- <div class="scroll-instruction">
                             <p>Put your finger on this grey box and scroll down as needed</p>
-                        </div>
+                        </div> -->
                         <label for="name">Full Name:</label>
                         <input type="text" id="name" placeholder="John Wick Doe" required></br>
                     
@@ -382,6 +392,11 @@
                 </div>
             </div>
         </section>
+
+        <footer id="footer-text">
+            <p>©2023 by Del Gato Rescue</p>
+            <p>a 501(c)(3) registered nonprofit organization</p>
+        </footer>
     
         <section class="video-section">
             <video class="bg-video" autoplay loop muted plays-inline>
