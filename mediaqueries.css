@@ -133,7 +133,8 @@
 
 
     .donate-wrapper {
-        width: 95%;
+        width: 90%;
+        padding-bottom: 20vh;
         align-items:flex-start;
     }
 
@@ -808,7 +809,7 @@
     }
 
     .donate-left p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .thank-you-icon2 {
@@ -816,6 +817,7 @@
     }
     .donate-right {
         margin-top: 3vh;
+        
     }
 
     .donate-right p {
@@ -828,8 +830,8 @@
     }
 
     .donate-icon {
-        width: 180px;
-        height: 100px;
+        width: 140px;
+        height: 80px;
     }
 
 
