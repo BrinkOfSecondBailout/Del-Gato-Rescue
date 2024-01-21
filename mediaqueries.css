@@ -133,21 +133,36 @@
         align-items:flex-start;
     }
 
-    .donate-text {
-        margin-top: 1vh;
+    .thank-you-icon {
+        display: none;
     }
 
-    .donate-text span {
-        color: rgb(18, 253, 18);
-        text-decoration: underline;
+    .thank-you-icon2 {
+        margin-top: -3vh;
     }
+
+    .donate-text {
+        margin-top: 4vh;
+    }
+
 
     .donate-left p {
-        font-size: 19px;
+        font-size: 20px;
+        
+        
     }
 
     .donate-right {
-        margin-top: 10vh;
+        margin-top: 5vh;
+    }
+
+    .donate-right p {
+        font-size: 22px;
+        font-family: 'Titillium Web';
+        color: rgb(42, 251, 42);
+        text-decoration: underline;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .donate-icon {
@@ -427,6 +442,11 @@
         margin-top: 4vh;
         width: 60px;
     }
+    
+    .thank-you-icon {
+        display: none;
+    }
+
 
 
     .donate-wrapper {
@@ -435,7 +455,7 @@
     }
 
     .donate-text {
-        margin-top: 1vh;
+        margin-top: 3vh;
     }
 
     .donate-text span {
@@ -447,8 +467,20 @@
         font-size: 17px;
     }
 
+    .thank-you-icon2 {
+        margin-top: -2vh;
+    }
     .donate-right {
-        margin-top: 10vh;
+        margin-top: 3vh;
+    }
+
+    .donate-right p {
+        font-size: 18px;
+        font-family: 'Titillium Web';
+        color: rgb(42, 251, 42);
+        text-decoration: underline;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .donate-icon {
@@ -937,6 +969,13 @@
         margin: 0 auto;
     }
 
+    .donate-right p {
+        font-family: 27px;
+        width: 100%;
+    }
+
+
+
     .heart-icon {
         margin: 0 auto;
     }
@@ -964,11 +1003,6 @@
 
     .donate-text p {
         font-size: 22px;
-    }
-
-    .donate-text span {
-        text-decoration: underline;
-        color: rgb(97, 254, 44);
     }
 
     /* Testimonials */
