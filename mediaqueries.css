@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 1282px) {
     #home {
         height: 110vh;
@@ -33,6 +34,9 @@
         font-size: 110px;
     }
 
+    .home-content h1 {
+        margin-top: 5vh;
+    }
     .home-content h4 {
         font-size: 20px;
     }
@@ -49,8 +53,9 @@
 
 
     .about-us-content {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
+        
     }
 
     .about-us-wrapper {
@@ -87,7 +92,7 @@
     }
 
     .our-work-flex {
-        width: 90%;
+        width: 80%;
         height: fit-content;
     }
 
@@ -105,9 +110,12 @@
         height: 400px;
     }
 
+
+
     .all-columns {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
+        margin-top: 5vh;
     }
 
     .one-column a {
@@ -125,7 +133,7 @@
 
 
     .donate-wrapper {
-        width: 100%;
+        width: 95%;
         align-items:flex-start;
     }
 
@@ -337,7 +345,7 @@
     }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (max-width: 1281px) {
 
     #home {
         height: 110vh;
@@ -1126,22 +1134,11 @@
     }
     
     .home-content {
-        margin-top: 15vh;
+        margin-top: 12vh;
     }
 
 
 
-
-
-    .tired-cat {
-        display: block;
-        width: 60px;
-        margin-top: -10vh;
-    }
-
-    .tired-cat2 {
-        display: none;
-    }
 
     .about-us-content {
         width: 90%;
@@ -1157,11 +1154,12 @@
 
     .about-us-text p {
         font-size: 20px;
+
     }
 
     .about-us-wrapper {
         flex-direction: column;
-        margin-top: 12vh;
+        margin-top: 10vh;
         width: 95%;
     }
 
@@ -1730,7 +1728,7 @@
     /* Home page */
     
     .home-content {
-        margin-top: -3vh;
+        margin-top: 0vh;
     }
     
     .mobile-screen-welcome {
