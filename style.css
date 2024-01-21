@@ -93,12 +93,14 @@ html {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
+    margin: 0 auto;
 }
 
 .top-bar-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .navigation-total {
@@ -166,34 +168,11 @@ html {
     margin-top: 1vh;
 }
 
-/* Bottom Bar */
-
-.bottom-bar {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
-    background: black;
-    height: 32px;
-    display: block;
-    padding: 5px;
-}
-
-.bottom-bar p {
-    font-family: 'Titillium Web';
-    font-size: 14px;
-    color: rgb(165, 165, 165);
-    margin: 2px 0;
-    margin-top: -2px;
-    margin-bottom: -8px;
-}
 
 /* Home */
 
 #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact , #petfinder{
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,10 +275,10 @@ html {
 /* About Us */
 
 .about-us-content {
-    width: 70%;
+    /* width: 70%; */
     /* text-align: center; */
     /* position: relative; */
-    height: 100%;
+    /* height: 100%; */
     /* margin-bottom: 15vh; */
 }
 
@@ -314,12 +293,11 @@ html {
 .about-us-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 3vh;
 }
 
 .about-us-text {
     /* flex: 1; */
-    margin-top: -12vh;
+    /* margin-top: -12vh; */
     
 }
 
@@ -338,13 +316,7 @@ html {
 }
 
 .slideshow-container {
-    margin-top: 2vh;
-    margin-right: 15vh;
-    /* flex: 1; */
-    /* position: relative; */
-    /* max-width: 100%; */
-    /* left: 30px; */
-    /* align-items: center; */
+    /* margin-top: 2vh; */
 }
 
 
@@ -710,9 +682,7 @@ textarea {
 /* Contact */
 
 .contact-content {
-    /* position: relative; */
     height: 100%;
-    /* margin-bottom: 10vh; */
     margin-top: 5vh;
 }
 
@@ -721,7 +691,6 @@ textarea {
     justify-content: center;
     gap: 8vh;
     padding-bottom: 10px;
-    /* margin-top: -10px; */
 }
 
 
@@ -747,9 +716,6 @@ textarea {
 }
 
 .subscribe-form {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* width: 1000px; */
     padding: 10px;
 }
 
@@ -777,7 +743,6 @@ textarea {
 
 
 
-
 .contact-div {
     display: flex;
     align-items: center;
@@ -798,7 +763,7 @@ textarea {
 .form-total {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 42vh;
+    height: fit-content;
     margin-top: 2vh;
     width: 100vh;
 }
@@ -895,10 +860,6 @@ textarea {
     margin-top: 5vh;
     width: 100%;
     height: 100%;
-    /* text-align: center; */
-    /* position: relative; */
-    /* margin-bottom: 10vh; */
-    /* height: 100%; */
 }
 
 .petfinder-wrapper {
@@ -950,7 +911,7 @@ textarea {
 .cat {
     display: flex;
     flex-direction: column;
-    height: 48vh;
+    height: fit-content;
 }
 
 .cat a {
@@ -1060,22 +1021,17 @@ textarea {
 
 .all-tags {
     margin: 0 auto;
-    /* width: 700px; */
 }
 
 .cat-bio {
     padding: 10px;
     width: 80%;
     margin: 0 auto;
-    /* text-align: center; */
 }
 .cat-bio p {
-    /* margin: 0 auto; */
 }
 
 .cat-criterias {
-    /* margin-top: -10px; */
-    /* margin-bottom: -10px; */
 }
 
 .petfinder {
