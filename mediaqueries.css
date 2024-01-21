@@ -1,4 +1,340 @@
-@media screen and (min-width: 1537px) {
+@media screen and (min-width: 1282px) {
+    #home {
+        height: 110vh;
+    }
+
+    #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+    
+    .wrapper-main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-logo {
+        width: 140px;
+    }
+
+    .top-bar {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navigation-links a,
+    .our-work-links a,
+    .one-column a,
+    .testimonials-wrapper a {
+        font-size: 22px;
+    }
+
+    .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1 {
+        font-size: 110px;
+    }
+
+    .home-content h4 {
+        font-size: 20px;
+    }
+
+    .home-content a {
+        font-size: 20px;
+    }
+
+    .main-pic-div {
+        padding: 25px;
+    }
+
+
+
+
+    .about-us-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-us-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 5vh;
+    }
+
+
+    .about-us-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10vh;
+        flex: 1;
+    }
+    .slideshow-container {
+        margin-top: 4vh;
+        flex: 1;
+    }
+    
+    .about-us-content p {
+        font-size: 19px;
+    }
+
+    .mySlides {
+        width: 400px;
+        height: 600px;
+    }
+
+
+    .placeholder-pic {
+        height: 400px;
+    }
+
+    .our-work-flex {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .our-work-text {
+        margin-left: 3vh;
+    }
+
+    .our-work-content p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .our-work-flex img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .all-columns {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .one-column a {
+        font-size: 25px;
+    }
+
+    .one-column p {
+        font-size: 20px;
+    }
+
+    .small-icon {
+        margin-top: 4vh;
+        width: 70px;
+    }
+
+
+    .donate-wrapper {
+        width: 100%;
+        align-items:flex-start;
+    }
+
+    .thank-you-icon {
+        display: none;
+    }
+
+    .thank-you-icon2 {
+        margin-top: -3vh;
+    }
+
+    .donate-text {
+        margin-top: 4vh;
+    }
+
+
+    .donate-left p {
+        font-size: 20px;
+        
+        
+    }
+
+    .donate-right {
+        margin-top: 5vh;
+    }
+
+    .donate-right p {
+        font-size: 22px;
+        font-family: 'Titillium Web';
+        color: rgb(42, 251, 42);
+        text-decoration: underline;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .donate-icon {
+        width: 200px;
+        height: 120px;
+    }
+
+
+    
+    .all-reviews {
+        width: 70%;
+        height: 42vh;
+    }
+
+    .leave-review {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .one-review h3 {
+        font-size: 22px;
+    }
+
+    .one-review p {
+        font-size: 22px;
+    }
+
+    .review-form label {
+        font-size: 22px;
+    }
+
+    .review-form ::placeholder {
+        font-size: 21px;
+    }
+
+
+
+    .subscribe-input {
+        width: 320px;
+    }
+
+    .subscribe-button {
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .subscribe-form ::placeholder {
+        font-size: 20px;
+    }
+    .subscribe-form input {
+        font-size: 20px;
+    }
+
+    .contact-links {
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .subscribe-div h4 {
+        font-size: 20px;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-div p {
+        font-size: 20px;
+    }
+
+    .form-total {
+        height: fit-content;
+        width: 80vh;
+    }
+
+    .contact-form label {
+        font-size: 22px;
+    }
+
+    .contact-form ::placeholder {
+        font-size: 20px;
+    }
+
+    .contact-form select,
+    input,
+    option,
+    textarea {
+        font-size: 20px;
+    }
+
+
+    .petfinder-wrapper {
+        width: 80%;
+    }
+
+    .all-cats a {
+        font-size: 22px;
+    }
+
+    .all-cats h4 {
+        font-size: 16px;
+    }
+
+    .all-cats p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .cat-picture {
+        width: 220px;
+        height: 220px;
+        padding: 15px;
+    }
+
+    .one-cat h2 {
+        font-size: 40px;
+    }
+
+    .one-cat h4 {
+        font-size: 22px;
+    }
+
+    .one-cat h5 {
+        font-size: 17px;
+    }
+
+    .one-cat a {
+        font-size: 18px;
+    }
+
+    .cat-slide img {
+        width: 350px;
+        height: 420px;
+    }
+
+    .prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .petfinder {
+        width: 330px;
+    }
+
+    .petfinder img {
+        width: 120px;
+    }
+
+    .cat-form {
+        width: 430px;
+    }
+
+    .cat-form img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cat-form a {
+        font-size: 25px;
+        color: rgba(12, 250, 51, 0.923);
+    }
+
+    .cat-form img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cat {
+        height: 35vh;
+    }
 }
 
 @media screen and (min-width: 1281px) {
