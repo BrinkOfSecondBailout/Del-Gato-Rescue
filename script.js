@@ -472,6 +472,16 @@ function showOneCat(cat) {
     oneCatDisplay.appendChild(backButtonElement);
     oneCatDisplay.appendChild(catElement);
     oneCatDisplay.appendChild(bottomBackButtonElement);
+
+    const petFinderSection = document.getElementById('petfinder');
+    const topOffset = document.querySelector('.top-bar').offsetHeight;
+
+    const targetPosition = petFinderSection.offsetTop - topOffset;
+
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+    });
 }
 
 // Go Back Button to Return to All Cats

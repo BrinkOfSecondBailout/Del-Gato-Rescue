@@ -2145,18 +2145,31 @@
         height: 250px;
     }
 
+    .selected-cat {
+        /* width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: -3vh; */
+    }
+
+
     .one-cat h2 {
         font-size: 35px;
     }
     .one-cat h4 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .one-cat h5 {
         font-size: 19px;
     }
     .one-cat p {
-        font-size: 19px;
+        font-size: 15px;
     }
 
     .one-cat a {
@@ -2174,6 +2187,7 @@
         height: 40px;
     }
 
+
     .cat-slideshow-container {
         padding: 10px;
         flex-direction: column;
@@ -2186,21 +2200,39 @@
         width: 90%;
     }
     .cat-slide img {
-        width: 330px;
-        height: 370px;
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
     }
+
+    .selected-cat h5 {
+        font-size: 16px;
+    }
+    .cat-bio {
+        width: fit-content;
+    }
+
+    .cat-bio p {
+        font-size: 17px;
+        
+    }
+
+    .cat-criterias h4{
+        font-size: 18px;
+    }
+
     .form-icon {
         margin-top: 5vh;
     }
     .cat-form a {
-        font-size: 30px;
+        font-size: 28px;
     }
     .back-button {
-        width: 120px;
+        width: 100px;
     }
     .petfinder {
         width: 300px;
-        margin-left: -2vh;
+        margin-left: -3vh;
     }
     .petfinder img {
         width: 90px;
