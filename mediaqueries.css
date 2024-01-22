@@ -36,7 +36,7 @@
     }
 
     .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1 {
-        font-size: 110px;
+        font-size: 100px;
     }
 
     .home-content h1 {
@@ -248,6 +248,8 @@
     .form-total {
         height: fit-content;
         width: 80vh;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid white;
     }
 
     .contact-form label {
@@ -595,6 +597,9 @@
     .form-total {
         height: fit-content;
         width: 80vh;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid white;
+        border-radius: 5px;
     }
 
     .contact-form label {
@@ -707,6 +712,10 @@
     #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
+    }
+
+    .top-bar-dummy {
+        height: 150px;
     }
 
     .main-logo {
@@ -911,6 +920,8 @@
 
     .form-total {
         height: fit-content;
+        background-color: rgba(57, 57, 57, 0.709);
+        border: 1px solid white;
         width: 70vh;
     }
 
@@ -1038,6 +1049,7 @@
         padding-bottom: 5vh;
     }
     
+
     /* Top Navigations */
     .main-logo {
         width: 110px;
@@ -1045,6 +1057,10 @@
     }
 
     .social-links {
+        display: none;
+    }
+
+    .top-bar-dummy {
         display: none;
     }
 
@@ -1448,8 +1464,6 @@
     .contact-form {
         box-shadow: none;
         border-radius: none;
-        background-color: rgba(57, 57, 57, 0.709);
-        border: 1px solid white;
         margin: 0 auto;
     }
 
@@ -1611,6 +1625,7 @@
         padding-bottom: 5vh;
     }
 
+
     ::-webkit-scrollbar-track {
         background: #797979;
         border-radius: 5px;
@@ -1626,6 +1641,9 @@
     }
 
     /* Top Navigations */
+    .top-bar-dummy {
+        display: none;
+    }
     .main-logo {
         width: 100px;
         margin-left: -4vh;
@@ -1756,6 +1774,7 @@
 
     .mobile-screen-welcome h1 {
         font-size: 60px;
+        margin-top: -5vh;
     }
 
     .full-screen-welcome {
@@ -2073,7 +2092,7 @@
 
 
     .form-total {
-        width: 92%;
+        width: 90%;
         height: fit-content;
         margin: 0 auto;
         margin-top: 3vh;
@@ -2083,8 +2102,6 @@
     .contact-form {
         box-shadow: none;
         border-radius: none;
-        background-color: rgba(57, 57, 57, 0.709);
-        border: 1px solid white;
     }
 
     .contact-links p {
