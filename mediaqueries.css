@@ -4,6 +4,7 @@
         height: 110vh;
     }
 
+
     #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
@@ -16,6 +17,10 @@
 
     .main-logo {
         width: 140px;
+    }
+
+    .social-icon {
+        width: 70px;
     }
 
     .top-bar {
@@ -36,6 +41,7 @@
 
     .home-content h1 {
         margin-top: 5vh;
+        font-size: 90px;
     }
     .home-content h4 {
         font-size: 20px;
@@ -259,6 +265,9 @@
         font-size: 20px;
     }
 
+    .petfinder-content h1 {
+        font-size: 85px;
+    }
 
     .petfinder-wrapper {
         width: 80%;
@@ -364,6 +373,10 @@
 
     .main-logo {
         width: 140px;
+    }
+
+    .social-icon {
+        width: 60px;
     }
 
     .top-bar {
@@ -1618,6 +1631,10 @@
         margin-left: -4vh;
     }
 
+    .social-icon {
+        width: 55px;
+    }
+
     .social-links {
         display: none;
     }
@@ -1738,7 +1755,7 @@
     }
 
     .mobile-screen-welcome h1 {
-        font-size: 75px;
+        font-size: 60px;
     }
 
     .full-screen-welcome {
@@ -1763,7 +1780,7 @@
     }
 
     .about-us-content h1{
-        font-size: 80px;
+        font-size: 70px;
     }
 
 
@@ -1812,7 +1829,7 @@
     }
 
     .our-work-content h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .our-work-links {
@@ -1854,7 +1871,7 @@
     }
 
     .adopt-foster-content h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .all-columns {
@@ -1919,7 +1936,7 @@
     }
 
     .donate-content h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .donate-left {
@@ -2027,7 +2044,7 @@
     /* Contact Us page */
 
     .contact-content h1 {
-        font-size: 65px;
+        font-size: 60px;
     }
     .contact-icon {
         width: 20px;
@@ -2111,7 +2128,7 @@
         width: 100%;
     }
     .petfinder-content h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
     .petfinder-wrapper {
         width: 95%;
