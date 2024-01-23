@@ -1,11 +1,11 @@
 
 @media screen and (min-width: 1282px) {
-    #home {
+    /* #home {
         height: 110vh;
-    }
+    } */
 
 
-    #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
+    #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
     }
@@ -44,7 +44,7 @@
     }
 
     .home-content h1 {
-        margin-top: 5vh;
+        margin-top: 15vh;
         font-size: 90px;
     }
     .home-content h4 {
@@ -363,9 +363,14 @@
 
 @media screen and (max-width: 1281px) {
 
+    /* #home {
+        height: 120vh;
+    } */
     #home {
-        height: 110vh;
+        height: fit-content;
+        padding-bottom: 10vh;
     }
+
 
     #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
@@ -403,6 +408,10 @@
 
     .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1 {
         font-size: 100px;
+    }
+
+    .home-content h1 {
+        margin-top: 15vh;
     }
 
     .home-content h4 {
@@ -713,11 +722,11 @@
 }
 
 @media screen and (max-width: 1025px) {
-    #home {
-        height: 110vh;
-    }
+    /* #home {
+        height: 130vh;
+    } */
 
-    #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
+    #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
     }
@@ -744,7 +753,7 @@
     }
 
     .home-content {
-        margin-top: 13vh;
+        margin-top: 6vh;
     }
 
     .about-us-content {
@@ -1049,12 +1058,12 @@
 
 
 @media screen and (max-width: 769px) {
-    #home {
+    /* #home {
         height: 100vh;
         padding-bottom: 5vh;
-    }
+    } */
     
-    #about-us, #our-work,  #adopt-foster, #donate, #testimonials,  #contact, #petfinder {
+    #home, #about-us, #our-work,  #adopt-foster, #donate, #testimonials,  #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
     }
@@ -1175,7 +1184,7 @@
     }
     
     .home-content {
-        margin-top: 12vh;
+        margin-top: 4vh;
     }
 
 
@@ -1630,11 +1639,11 @@
         height: 120vh;
     } */
 
-    #home {
+    /* #home {
         height: 95vh;
-    }
+    } */
 
-    #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
+    #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
     }
