@@ -9,6 +9,10 @@
         height: fit-content;
         padding-bottom: 5vh;
     }
+
+    #our-work {
+        padding-bottom: 15vh;
+    }
     
     .wrapper-main {
         width: 80%;
@@ -28,10 +32,6 @@
         margin: 0 auto;
     }
 
-    .top-bar-dummy {
-        height: 140px;
-    }
-
     .navigation-links a,
     .our-work-links a,
     .one-column a,
@@ -43,44 +43,13 @@
         font-size: 80px;
     }
 
-    .home-content {
-        display: flex;
-        justify-content: center;
-
-    }
-
-
-    #kitties-link1 {
-        display: none;
-    }
-
-    .full-screen-welcome {
-        display: flex;
-        flex-direction: column;
-        margin-top: -5vh;
-        width: 45%;
-    }
-
     .home-content h1 {
         margin-top: 5vh;
-        font-size: 80px;
+        font-size: 90px;
     }
     .home-content h4 {
         font-size: 20px;
     }
-
-    .full-screen-welcome h1{
-        font-size: 60px;
-    }
-
-    .full-screen-welcome h2 {
-        font-size: 115px;
-    }
-
-    .home-pic-and-link {
-        margin-top: -10px;
-    }
-
 
     .home-content a {
         font-size: 20px;
@@ -402,6 +371,10 @@
         height: fit-content;
         padding-bottom: 5vh;
     }
+
+    #our-work {
+        padding-bottom: 15vh;
+    }
     
     .wrapper-main {
         width: 80%;
@@ -420,9 +393,6 @@
         width: 80%;
         margin: 0 auto;
     }
-    .top-bar-dummy {
-        height: 138px;
-    }
 
     .navigation-links a,
     .our-work-links a,
@@ -432,37 +402,8 @@
     }
 
     .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1 {
-        font-size: 70px;
+        font-size: 100px;
     }
-
-    .home-content {
-        display: flex;
-        margin-left: 5vh;
-        margin: 0 auto;
-    }
-
-    .home-pic-and-link {
-        margin-right: 5vh;
-        margin-top: -10px;
-    }
-
-    #kitties-link1 {
-        display: none;
-    }
-
-    .full-screen-welcome {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .full-screen-welcome h1{
-        font-size: 60px;
-    }
-
-    .full-screen-welcome h2 {
-        font-size: 115px;
-    }
-
 
     .home-content h4 {
         font-size: 20px;
@@ -799,26 +740,11 @@
     }
 
     .home-content h1 , .about-us-content h1, .our-work-content h1, .adopt-foster-content h1, .donate-content h1, .testimonials-content h1, .contact-content h1 , .petfinder-content h1 {
-        font-size: 60px;
-    }
-
-    .full-screen-welcome {
-        margin-top: 0vh;
-    }
-
-    .full-screen-welcome h1{
-        font-size: 50px;
-    }
-
-    .full-screen-welcome h2 {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .home-content {
-    }
-
-    .main-picture {
-        height: 42vh;
+        margin-top: 13vh;
     }
 
     .about-us-content {
@@ -1247,28 +1173,9 @@
     .main-pic-div {
         padding: 25px;
     }
-
     
     .home-content {
         margin-top: 12vh;
-        flex-direction: column;
-    }
-
-    #kitties-link2 {
-        display: none;
-    }
-
-    #kitties-link1 {
-        display: flex;
-        margin: 0 auto;
-    }
-
-    .home-pic-and-link {
-        /* margin-top: -4vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 0vh;
     }
 
 
@@ -1898,14 +1805,6 @@
         padding: 10px;
     }
 
-    .home-pic-and-link {
-        margin-right: 0vh;
-    }
-
-    .main-picture {
-        height: 40vh;
-    }
-
 
     /* About Us page */
 
@@ -1958,7 +1857,7 @@
     /* Our Work Section */
 
     .placeholder-pic {
-        height: 300px;
+        max-width:100%;
     }
     .our-work-content {
         width: 95%;
