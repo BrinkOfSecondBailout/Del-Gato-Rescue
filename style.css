@@ -854,6 +854,49 @@ textarea {
 }
 
 /* Petfinder */
+.loading-screen {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.loading-screen img {
+    width: 30%;
+}
+
+
+.loading-screen h2 {
+    font-family: "Titillium Web";
+    color: rgb(104, 255, 23);
+    font-size: 20px;
+}
+
+.error-screen {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.error-screen img {
+    width: 30%;
+}
+
+
+.error-screen h2 {
+    font-family: "Titillium Web";
+    color: rgb(255, 65, 65);
+    font-size: 20px;
+}
 
 .petfinder-content h1 {
     font-size: 60px;

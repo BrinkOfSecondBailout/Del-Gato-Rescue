@@ -499,10 +499,15 @@ let cachedCats = null;
 
 async function showAllCats() {
     const allCatsContainer = document.querySelector('.all-cats-wrapper')
+    const loadingScreen = document.querySelector('.loading-screen');
+    const errorScreen = document.querySelector('.error-screen');
 
     // let adoptCatsUrl = '/.netlify/functions/cats';
     
     try {
+
+        loadingScreen.style.display = 'flex';
+        errorScreen.style.display = 'none';
 
         if (cachedCats !== null && cachedCats.length > 0) {
             console.log('cached');
@@ -514,11 +519,14 @@ async function showAllCats() {
             cachedCats = adoptableCats;
     
             displayCats(allCatsContainer, adoptableCats);
+            loadingScreen.style.display = 'none';
         }
 
 
     } catch (error) {
         console.error('Error fetching cats:', error.message);
+        loadingScreen.style.display = 'none';
+        errorScreen.style.display = 'flex';
     }
 }
 
