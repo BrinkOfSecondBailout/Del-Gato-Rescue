@@ -2076,8 +2076,17 @@
         height: 20px;
     }
     .subscribe-input {
-        width: 200px;
+        width: 100%;
     }
+
+    .subscribe-div {
+        width: 90%;
+    }
+
+    .subscribe-form {
+        width: 80%;
+    }
+
     .contact-links {
         margin-top: 3vh;
         gap: 1vh;
@@ -2093,9 +2102,9 @@
         width: 100px;
         height: 40px;
     }
-
+    
     #address {
-        width: 95%;
+        width: 85%;
     }
     .contact-form textarea {
         height: 25vh;
