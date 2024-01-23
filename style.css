@@ -84,7 +84,7 @@ html {
 .top-bar-dummy {
     background-color: black;
     width: 100%;
-    height: 175px;
+    height: 127px;
     position: fixed;
     top: 0;
     margin: 0 auto;
@@ -227,6 +227,14 @@ html {
 
 .home-content a:hover::before {
     left: 100%;
+}
+
+.full-screen-welcome h1 {
+}
+
+.full-screen-welcome h2 {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
 }
 
 .mobile-screen-welcome {
