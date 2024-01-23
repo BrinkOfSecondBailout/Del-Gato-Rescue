@@ -2094,6 +2094,13 @@
         height: 40px;
     }
 
+    #address {
+        width: 95%;
+    }
+    .contact-form textarea {
+        height: 25vh;
+    }
+
 
 
 
