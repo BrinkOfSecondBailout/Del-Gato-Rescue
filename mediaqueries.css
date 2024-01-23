@@ -251,7 +251,7 @@
 
     .form-total {
         height: fit-content;
-        width: 80vh;
+        width: 100%;
         background-color: rgba(57, 57, 57, 0.709);
         border: 1px solid white;
     }
@@ -613,7 +613,7 @@
 
     .form-total {
         height: fit-content;
-        width: 80vh;
+        width: 100%;
         background-color: rgba(57, 57, 57, 0.709);
         border: 1px solid white;
         border-radius: 5px;
@@ -941,7 +941,7 @@
         height: fit-content;
         background-color: rgba(57, 57, 57, 0.709);
         border: 1px solid white;
-        width: 70vh;
+        width: 100%;
     }
 
     .contact-form label {
@@ -1474,7 +1474,7 @@
     }
 
     .form-total {
-        width: 95%;
+        width: 90%;
         height: fit-content;
         margin: 0 auto;
         margin-top: 3vh;

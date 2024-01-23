@@ -772,7 +772,7 @@ textarea {
     overflow-y: auto;
     height: fit-content;
     margin-top: 2vh;
-    width: 100vh;
+    /* width: 100vh; */
     border-radius:5px;
 }
 
