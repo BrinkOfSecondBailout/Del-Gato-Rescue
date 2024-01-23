@@ -2182,6 +2182,15 @@
 
 
     /* Adoptable Kitties page*/
+
+    .loading-screen h2 {
+        font-size: 18px;
+    }
+
+    .error-screen h2 {
+        font-size: 18px;
+    }
+
     .petfinder-content {
         width: 100%;
     }
