@@ -133,6 +133,11 @@ html {
     transition: transform 0.3s ease;
 }
 
+#petfinder-link {
+    animation: hoverUpDown 0.8s infinite;
+}
+
+
 
 .navigation-links {
     display: flex;
