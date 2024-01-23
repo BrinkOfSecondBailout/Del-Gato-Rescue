@@ -2191,6 +2191,10 @@
         font-size: 18px;
     }
 
+    .error-screen a {
+        font-size: 18px;
+    }
+
     .petfinder-content {
         width: 100%;
     }

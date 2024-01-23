@@ -898,6 +898,12 @@ textarea {
     font-size: 20px;
 }
 
+.error-screen a {
+    font-family: "Titillium Web";
+    color: rgb(255, 65, 65);
+    font-size: 20px;
+}
+
 .petfinder-content h1 {
     font-size: 60px;
     color: transparent;
