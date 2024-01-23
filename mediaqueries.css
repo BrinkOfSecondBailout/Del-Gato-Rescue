@@ -2195,6 +2195,14 @@
         font-size: 18px;
     }
 
+    .loading-screen img {
+        width: 60%;
+    }
+
+    .error-screen img {
+        width: 50%;
+    }
+
     .petfinder-content {
         width: 100%;
     }

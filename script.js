@@ -487,6 +487,8 @@ function showOneCat(cat) {
 // Go Back Button to Return to All Cats
 
 function goBackToAllCats() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    loadingScreen.style.display = 'none';
     oneCatDisplay.innerHTML = '';
     showAllCats();
 }
