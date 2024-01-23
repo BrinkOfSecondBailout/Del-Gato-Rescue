@@ -738,7 +738,7 @@
     }
 
     .about-us-content {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1616,8 +1616,12 @@
 
 
 @media screen and (max-width: 600px) {
-    #home {
+    /* #home {
         height: 120vh;
+    } */
+
+    #home {
+        height: 95vh;
     }
 
     #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
@@ -1770,6 +1774,8 @@
     
     .mobile-screen-welcome {
         display: flex;
+        /* testing */
+        margin-top: 26vh;
     }
 
     .mobile-screen-welcome h1 {
