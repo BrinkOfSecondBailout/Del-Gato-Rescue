@@ -487,8 +487,8 @@ function showOneCat(cat) {
 // Go Back Button to Return to All Cats
 
 function goBackToAllCats() {
-    const loadingScreen = document.querySelector('.loading-screen');
-    loadingScreen.style.display = 'none';
+    // const loadingScreen = document.querySelector('.loading-screen');
+    // loadingScreen.style.display = 'none';
     oneCatDisplay.innerHTML = '';
     showAllCats();
 }
@@ -512,6 +512,7 @@ async function showAllCats() {
         errorScreen.style.display = 'none';
 
         if (cachedCats !== null && cachedCats.length > 0) {
+            loadingScreen.style.display = 'none';
             console.log('cached');
             displayCats(allCatsContainer, cachedCats);
         } else {
