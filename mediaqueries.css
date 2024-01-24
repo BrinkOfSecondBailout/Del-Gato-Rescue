@@ -371,8 +371,9 @@
     }
 
     .cat {
-        height: 35vh;
+        height: 42vh;
     }
+
 }
 
 @media screen and (max-width: 1281px) {
@@ -731,7 +732,7 @@
     }
 
     .cat {
-        height: 35vh;
+        height: 50vh;
     }
 }
 
