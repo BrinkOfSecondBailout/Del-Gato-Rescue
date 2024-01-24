@@ -1,9 +1,7 @@
-
 @media screen and (min-width: 1282px) {
     /* #home {
         height: 110vh;
     } */
-
 
     #home, #about-us, #our-work, #adopt-foster, #donate, #testimonials, #contact, #petfinder {
         height: fit-content;
@@ -18,7 +16,7 @@
     #adopt-foster {
         padding-bottom: 10vh;
     }
-    
+
     .wrapper-main {
         width: 80%;
         margin: 0 auto;
@@ -202,8 +200,8 @@
 
     
     .all-reviews {
-        width: 70%;
-        height: 42vh;
+        width: 60%;
+        height: 50vh;
     }
 
     .leave-review {
@@ -566,7 +564,7 @@
     
     .all-reviews {
         width: 70%;
-        height: 42vh;
+        height: 50vh;
     }
 
     .leave-review {
@@ -894,7 +892,7 @@
 
     .all-reviews {
         width: 70%;
-        height: 42vh;
+        height: 45vh;
     }
 
     .leave-review {
@@ -1078,7 +1076,6 @@
         height: 100vh;
         padding-bottom: 5vh;
     } */
-    
     #home, #about-us, #our-work,  #adopt-foster, #donate, #testimonials,  #contact, #petfinder {
         height: fit-content;
         padding-bottom: 5vh;
